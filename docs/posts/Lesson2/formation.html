@@ -257,15 +257,58 @@ z&amp;=\left(\dfrac{\partial z}{\partial x}\right) x+\left(\dfrac{\partial z}{\p
 </ol>
 <p><em>Solution:</em></p>
 <ul>
-<li>Step 1: Find the partial derivatives:</li>
+<li>Step 1: Differentiating both sides with respect to <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>: <span class="math display">\[\begin{align*}
+2x+2(z-c)\dfrac{\partial z}{\partial x}&amp;=0\\
+2y+2(z-c)\dfrac{\partial z}{\partial y}&amp;=0
+\end{align*}\]</span> Or <span class="math display">\[\begin{align}
+x&amp;=(z-c)\dfrac{\partial z}{\partial x}\\
+y&amp;=(z-c)\dfrac{\partial z}{\partial y}
+\end{align}\]</span>{#eq-one}</li>
 </ul>
-<ol start="2" type="1">
-<li><strong>By Elimination of Arbitrary Functions</strong>: Consider <span class="math inline">\(F(x + y, z - y) = 0\)</span>. Let <span class="math inline">\(u = x + y\)</span> and <span class="math inline">\(v = z - y\)</span>: <span class="math display">\[
-\frac{\partial u}{\partial x} = 1, \quad \frac{\partial u}{\partial y} = 1, \quad \frac{\partial v}{\partial y} = -1
-\]</span> Then the PDE is: <span class="math display">\[
-\frac{\partial z}{\partial x} + \frac{\partial z}{\partial y} = 1
-\]</span></li>
+<p>Solving <span class="math inline">\(\eqref{eq-one}\)</span> , we get <span class="math display">\[qx=yp\]</span>.</p>
+<ol start="4" type="1">
+<li>Form a PDE from the static equation, <span class="math inline">\(z=(x-a)^2+(y-b)^2\)</span>.</li>
 </ol>
+<p><em>Solution:</em></p>
+<p>Given the static equation:</p>
+<p><span class="math display">\[z = (x - a)^2 + (y - b)^2\]</span></p>
+<p>we can find the corresponding PDE by following these steps:</p>
+</section>
+<section id="step-1-find-partial-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-find-partial-derivatives">Step 1: Find Partial Derivatives</h3>
+<p><strong>Find<span class="math inline">\(\frac{\partial z}{\partial x}\)</span>:</strong></p>
+<p><span class="math display">\[\frac{\partial z}{\partial x} = 2(x - a)\]</span></p>
+<p>Let <span class="math inline">\(\frac{\partial z}{\partial x} = p\)</span>:</p>
+<p><span class="math display">\[p = 2(x - a) \quad \text{or} \quad x - a = \frac{p}{2}\]</span></p>
+<p><strong>Find <span class="math inline">\(\frac{\partial z}{\partial y}\)</span>:</strong></p>
+<p><span class="math display">\[\frac{\partial z}{\partial y} = 2(y - b)\]</span></p>
+<p>Let<span class="math inline">\(\frac{\partial z}{\partial y} = q\)</span>:</p>
+<p><span class="math display">\[q = 2(y - b) \quad \text{or} \quad y - b = \frac{q}{2}\]</span></p>
+</section>
+<section id="step-2-replace-the-arbitrary-constantsa-andb" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-replace-the-arbitrary-constantsa-andb">Step 2: Replace the Arbitrary Constants<span class="math inline">\(a\)</span> and<span class="math inline">\(b\)</span></h3>
+<p>From the partial derivatives, express<span class="math inline">\(a\)</span> and<span class="math inline">\(b\)</span> as follows:</p>
+<p><span class="math display">\[a = x - \frac{p}{2}\]</span></p>
+<p><span class="math display">\[b = y - \frac{q}{2}\]</span></p>
+</section>
+<section id="step-3-simplify-the-representation-for-z" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-simplify-the-representation-for-z">Step 3: Simplify the Representation for <span class="math inline">\(z\)</span></h3>
+<p>Substitute <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>back into the original equation:</p>
+<p><span class="math display">\[z = \left(x - \left(x - \frac{p}{2}\right)\right)^2 + \left(y - \left(y - \frac{q}{2}\right)\right)^2\]</span></p>
+<p>Simplify:</p>
+<p><span class="math display">\[z = \left(\frac{p}{2}\right)^2 + \left(\frac{q}{2}\right)^2\]</span></p>
+<p><span class="math display">\[z = \frac{p^2}{4} + \frac{q^2}{4}\]</span></p>
+<p><span class="math display">\[4z = p^2 + q^2\]</span></p>
+</section>
+<section id="final-pde" class="level3">
+<h3 class="anchored" data-anchor-id="final-pde">Final PDE</h3>
+<p>The partial differential equation is:</p>
+<p><span class="math display">\[p^2 + q^2 = 4z\]</span></p>
+<p>where <span class="math inline">\(p = \frac{\partial z}{\partial x}\)</span> and<span class="math inline">\(q = \frac{\partial z}{\partial y}\)</span>. 2. <strong>By Elimination of Arbitrary Functions</strong>: Consider <span class="math inline">\(F(x + y, z - y) = 0\)</span>. Let <span class="math inline">\(u = x + y\)</span> and <span class="math inline">\(v = z - y\)</span>: <span class="math display">\[
+   \frac{\partial u}{\partial x} = 1, \quad \frac{\partial u}{\partial y} = 1, \quad \frac{\partial v}{\partial y} = -1
+   \]</span> Then the PDE is: <span class="math display">\[
+   \frac{\partial z}{\partial x} + \frac{\partial z}{\partial y} = 1
+   \]</span></p>
 </section>
 <section id="examples-of-static-pdes" class="level3">
 <h3 class="anchored" data-anchor-id="examples-of-static-pdes">Examples of Static PDEs</h3>

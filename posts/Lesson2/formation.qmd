@@ -69,8 +69,65 @@ There are three approaches to form PDE from a static equation.
 
 *Solution:*
 
-- Step 1: Find the partial derivatives:
+- Step 1: Differentiating both sides with respect to $x$ and $y$:
+\begin{align*}
+2x+2(z-c)\dfrac{\partial z}{\partial x}&=0\\
+2y+2(z-c)\dfrac{\partial z}{\partial y}&=0
+\end{align*}
+Or
+\begin{align}
+x&=(z-c)\dfrac{\partial z}{\partial x}\\
+y&=(z-c)\dfrac{\partial z}{\partial y}
+\end{align}{#eq-one}
 
+Solving \eqref{eq-one} , we get $$qx=yp$$.
+
+4. Form a PDE from the static equation, $z=(x-a)^2+(y-b)^2$.
+
+*Solution:*
+
+Given the static equation:
+
+$$z = (x - a)^2 + (y - b)^2$$
+
+we can find the corresponding PDE by following these steps:
+
+-  Step 1: Find Partial Derivatives
+
+$$\frac{\partial z}{\partial x} = 2(x - a)$$
+
+Let $\frac{\partial z}{\partial x} = p$:
+
+$$p = 2(x - a) \quad \text{or} \quad x - a = \frac{p}{2}$$
+
+
+$$\frac{\partial z}{\partial y} = 2(y - b)$$
+
+Let$\frac{\partial z}{\partial y} = q$:
+
+$$q = 2(y - b) \quad \text{or} \quad y - b = \frac{q}{2}$$
+
+-  Step 2: Replace the Arbitrary Constants $a$ and $b$
+
+From the partial derivatives, express $a$ and $b$ as follows:
+
+$$a = x - \frac{p}{2}$$
+
+$$b = y - \frac{q}{2}$$
+
+-   Step 3: Simplify the Representation for $z$
+
+Substitute $a$ and $b$back into the original equation:
+
+$$z = \left(x - \left(x - \frac{p}{2}\right)\right)^2 + \left(y - \left(y - \frac{q}{2}\right)\right)^2$$
+
+On Simplification, we get:
+
+$$z = \left(\frac{p}{2}\right)^2 + \left(\frac{q}{2}\right)^2$$
+
+$$z = \frac{p^2}{4} + \frac{q^2}{4}$$
+
+$$4z = p^2 + q^2$$
 
 
 2. **By Elimination of Arbitrary Functions**:
