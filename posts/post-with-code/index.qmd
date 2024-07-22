@@ -3,7 +3,7 @@ title: "Demonstrating the Use of PDEs in Chemical Engineering with Python"
 author: "Siju SWamy"
 date: "2024-07-21"
 categories: [news, code, analysis]
-image: "post-with-code/image.jpg"
+image: "image.jpg"
 execute:
   echo: false
 jupyter: python3
