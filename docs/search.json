@@ -1,0 +1,485 @@
+[
+  {
+    "objectID": "Presentations/formation.html#section",
+    "href": "Presentations/formation.html#section",
+    "title": "Formation of Partial Differential Equation",
+    "section": "",
+    "text": "Partial Differential Equation"
+  },
+  {
+    "objectID": "Presentations/formation.html#section-1",
+    "href": "Presentations/formation.html#section-1",
+    "title": "Formation of Partial Differential Equation",
+    "section": "",
+    "text": "Partial Differential Equation"
+  },
+  {
+    "objectID": "Presentations/formation.html#basics",
+    "href": "Presentations/formation.html#basics",
+    "title": "Formation of Partial Differential Equation",
+    "section": "Basics",
+    "text": "Basics\n\n\n\n\n\n\nDefinition\n\n\nA differential equation which involve partial derivatives is called Partial Differential Equation (PDE). The general form of an \\(m\\) th order PDE is given by:\n\\[F(z,x,y,\\frac{\\partial^r z}{\\partial x^i\\partial y^n};1\\leq r\\leq m,0\n\\leq (i,n)\\leq m,i+n=r)=0\\]\n\n\n\n\n\n\n\n\n\nOrder and Degree of PDE\n\n\nOrder: The order of the highest order partial derivative present in the PDE is called its order.\nDegree: The power of the highest order partial derivative present in the PDE is called its degree.\n\n\n\n\nLearn more: Syllabus-20MA201"
+  },
+  {
+    "objectID": "Presentations/formation.html#examples",
+    "href": "Presentations/formation.html#examples",
+    "title": "Formation of Partial Differential Equation",
+    "section": "Examples",
+    "text": "Examples\n\n\n\\(\\frac{\\partial z}{\\partial x}+  \\frac{\\partial z}{\\partial y}=z\\)\n\\(p+q+pq+z\\)\n\\(z=p+q+xypq\\)\n\\(\\frac{\\partial u}{\\partial t}=\\alpha^2\\frac{\\partial^2 u}{\\partial x^2}\\)\n\\(\\frac{\\partial u}{\\partial t}-\\nabla^2 u=f(u)\\)"
+  },
+  {
+    "objectID": "Presentations/formation.html#section-2",
+    "href": "Presentations/formation.html#section-2",
+    "title": "Formation of Partial Differential Equation",
+    "section": "",
+    "text": "Formation of PDE"
+  },
+  {
+    "objectID": "Presentations/formation.html#section-3",
+    "href": "Presentations/formation.html#section-3",
+    "title": "Formation of Partial Differential Equation",
+    "section": "",
+    "text": "Formation of PDE"
+  },
+  {
+    "objectID": "Presentations/formation.html#methods",
+    "href": "Presentations/formation.html#methods",
+    "title": "Formation of Partial Differential Equation",
+    "section": "Methods",
+    "text": "Methods\nThere are three approaches to form PDE from a static equation.\n\nElimination of arbitrary constants\nElimination of arbitrary functions\nElimination of arbitrary function \\(\\phi\\) from the relation \\(\\phi(u,v)=0\\), where \\(u\\) and \\(v\\) are functions of \\(x\\) ,\\(y\\) and \\(z\\)."
+  },
+  {
+    "objectID": "Presentations/formation.html#method-1",
+    "href": "Presentations/formation.html#method-1",
+    "title": "Formation of Partial Differential Equation",
+    "section": "Method-1",
+    "text": "Method-1\n\n\n\n\n\n\nAlgorithm (Elimination Method)\n\n\n\nStep 1: Differentiate partially given static equation.\nStep 2: Eliminate the arbitrary constants using the expression for partial differentials.\n\n\n\n\nExample\n\n\nForm a PDE from the static equation \\(z=ax+by+ab\\)."
+  },
+  {
+    "objectID": "Presentations/formation.html#thank-you",
+    "href": "Presentations/formation.html#thank-you",
+    "title": "Formation of Partial Differential Equation",
+    "section": "Thank you",
+    "text": "Thank you"
+  },
+  {
+    "objectID": "Presentations/formation.html#section-4",
+    "href": "Presentations/formation.html#section-4",
+    "title": "Formation of Partial Differential Equation",
+    "section": "",
+    "text": "https://sijuswamy.github.io/mywebsite/"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Mathematics for Chemical Engineers",
+    "section": "",
+    "text": "Mathematics has always been at the heart of Chemical Engineering, guiding the evolution of the field from its early empirical roots to today’s sophisticated computational models. The journey of mathematical treatment in Chemical Engineering can be divided into two distinct eras: before and after 1947. This exploration not only highlights the systematic growth driven by mathematics but also underscores the transformative role of computational mathematics and Artificial Intelligence (AI) in shaping the future of the discipline.\n\n\nIn the early 20th century, Chemical Engineering was solidifying its identity as a distinct field. During this formative period, engineers relied heavily on empirical formulas and fundamental mathematical principles to navigate the complexities of chemical processes. The emphasis was on grasping core principles such as mass and energy balances. Key contributions from pioneers like Warren K. Lewis and Edwin R. Gilliland provided the foundation for understanding mass transfer, while William H. McAdams’ work on heat transfer established crucial concepts in thermal analysis, enabling more accurate predictions and control of heat-related processes.\nAs Chemical Engineering advanced, core concepts such as unit operations and reaction kinetics took center stage. Arthur D. Little’s introduction of unit operations offered a systematic approach to analyzing chemical processes. Engineers began employing differential equations to describe phenomena like fluid flow, heat transfer, and mass transfer, which led to more precise engineering solutions. Early reaction kinetics models, developed with insights from Svante Arrhenius on activation energy, paved the way for more sophisticated studies of chemical reaction rates.\nMathematical methods during this era were largely analytical, with linear differential equations being solved to understand process behavior. Graphical methods, including nomographs developed by Theodore von Kármán, were essential tools for visualizing and simplifying complex calculations.\n\n\n\nThe post-World War II era ushered in significant advancements in the mathematical treatment of Chemical Engineering problems. The development of more complex models, incorporating partial differential equations, provided deeper insights into process dynamics and control. Influential work by John H. Perry and Robert Byron Bird played a pivotal role in this advancement. The integration of optimization techniques became crucial for process design and operation, with linear programming methods, pioneered by George Dantzig, helping optimize resource allocation and process efficiency.\nThe arrival of digital computers marked a revolutionary shift, enabling complex calculations and simulations that were previously unattainable. This technological leap allowed engineers to perform simulations predicting process behavior under various conditions, thanks to the contributions of pioneers like Richard H. Wilhelm. The development of process simulation software, such as HYSYS and ASPEN, by innovators like Thomas F. Edgar and Dale F. Rudd, became indispensable tools for detailed process modeling and optimization.\nAs Chemical Engineering evolved, the integration of advanced mathematical techniques from other disciplines became increasingly common. Advanced calculus, linear algebra, and statistics found their way into research and development, helping researchers build sophisticated models and perform rigorous analyses. This integration was significantly influenced by the work of researchers like Stanley I. Sandler and J. M. Smith.\n\n\n\nToday, computational mathematics is an integral part of Chemical Engineering, providing high-fidelity simulations and advanced optimization capabilities. Techniques such as Computational Fluid Dynamics (CFD) allow for in-depth analysis of complex flow phenomena, a development driven by the work of David G. Lilley. Advanced optimization algorithms, including genetic algorithms and simulated annealing, are used to determine optimal process conditions. Non-linear programming techniques also play a crucial role in solving complex optimization problems, influenced by researchers like L. T. Biegler.\nArtificial Intelligence (AI) is poised to further revolutionize Chemical Engineering by enhancing predictive modeling, process control, and optimization. Machine learning algorithms help identify patterns in process data and optimize control strategies, improving fault detection and process reliability. Significant contributions from researchers like Babak S. Kanani have demonstrated AI’s potential to transform the industry by making processes smarter and more efficient. The ongoing integration of AI with traditional mathematical methods promises to drive innovation and enhance problem-solving capabilities in Chemical Engineering, as highlighted by researchers such as Fengqi You.\nIn conclusion, the mathematical treatment of Chemical Engineering has come a long way, evolving from simple empirical approaches to complex computational models. The field’s growth has been driven by advancements in mathematics and technology. As we look to the future, the continued integration of computational mathematics and AI will undoubtedly shape the next frontier in Chemical Engineering, leading to more efficient, innovative, and sustainable processes."
+  },
+  {
+    "objectID": "posts/welcome/index.html#mathematics-for-chemical-engineers-a-historical-perspective",
+    "href": "posts/welcome/index.html#mathematics-for-chemical-engineers-a-historical-perspective",
+    "title": "Mathematics for Chemical Engineers",
+    "section": "",
+    "text": "Mathematics has always been at the heart of Chemical Engineering, guiding the evolution of the field from its early empirical roots to today’s sophisticated computational models. The journey of mathematical treatment in Chemical Engineering can be divided into two distinct eras: before and after 1947. This exploration not only highlights the systematic growth driven by mathematics but also underscores the transformative role of computational mathematics and Artificial Intelligence (AI) in shaping the future of the discipline.\n\n\nIn the early 20th century, Chemical Engineering was solidifying its identity as a distinct field. During this formative period, engineers relied heavily on empirical formulas and fundamental mathematical principles to navigate the complexities of chemical processes. The emphasis was on grasping core principles such as mass and energy balances. Key contributions from pioneers like Warren K. Lewis and Edwin R. Gilliland provided the foundation for understanding mass transfer, while William H. McAdams’ work on heat transfer established crucial concepts in thermal analysis, enabling more accurate predictions and control of heat-related processes.\nAs Chemical Engineering advanced, core concepts such as unit operations and reaction kinetics took center stage. Arthur D. Little’s introduction of unit operations offered a systematic approach to analyzing chemical processes. Engineers began employing differential equations to describe phenomena like fluid flow, heat transfer, and mass transfer, which led to more precise engineering solutions. Early reaction kinetics models, developed with insights from Svante Arrhenius on activation energy, paved the way for more sophisticated studies of chemical reaction rates.\nMathematical methods during this era were largely analytical, with linear differential equations being solved to understand process behavior. Graphical methods, including nomographs developed by Theodore von Kármán, were essential tools for visualizing and simplifying complex calculations.\n\n\n\nThe post-World War II era ushered in significant advancements in the mathematical treatment of Chemical Engineering problems. The development of more complex models, incorporating partial differential equations, provided deeper insights into process dynamics and control. Influential work by John H. Perry and Robert Byron Bird played a pivotal role in this advancement. The integration of optimization techniques became crucial for process design and operation, with linear programming methods, pioneered by George Dantzig, helping optimize resource allocation and process efficiency.\nThe arrival of digital computers marked a revolutionary shift, enabling complex calculations and simulations that were previously unattainable. This technological leap allowed engineers to perform simulations predicting process behavior under various conditions, thanks to the contributions of pioneers like Richard H. Wilhelm. The development of process simulation software, such as HYSYS and ASPEN, by innovators like Thomas F. Edgar and Dale F. Rudd, became indispensable tools for detailed process modeling and optimization.\nAs Chemical Engineering evolved, the integration of advanced mathematical techniques from other disciplines became increasingly common. Advanced calculus, linear algebra, and statistics found their way into research and development, helping researchers build sophisticated models and perform rigorous analyses. This integration was significantly influenced by the work of researchers like Stanley I. Sandler and J. M. Smith.\n\n\n\nToday, computational mathematics is an integral part of Chemical Engineering, providing high-fidelity simulations and advanced optimization capabilities. Techniques such as Computational Fluid Dynamics (CFD) allow for in-depth analysis of complex flow phenomena, a development driven by the work of David G. Lilley. Advanced optimization algorithms, including genetic algorithms and simulated annealing, are used to determine optimal process conditions. Non-linear programming techniques also play a crucial role in solving complex optimization problems, influenced by researchers like L. T. Biegler.\nArtificial Intelligence (AI) is poised to further revolutionize Chemical Engineering by enhancing predictive modeling, process control, and optimization. Machine learning algorithms help identify patterns in process data and optimize control strategies, improving fault detection and process reliability. Significant contributions from researchers like Babak S. Kanani have demonstrated AI’s potential to transform the industry by making processes smarter and more efficient. The ongoing integration of AI with traditional mathematical methods promises to drive innovation and enhance problem-solving capabilities in Chemical Engineering, as highlighted by researchers such as Fengqi You.\nIn conclusion, the mathematical treatment of Chemical Engineering has come a long way, evolving from simple empirical approaches to complex computational models. The field’s growth has been driven by advancements in mathematics and technology. As we look to the future, the continued integration of computational mathematics and AI will undoubtedly shape the next frontier in Chemical Engineering, leading to more efficient, innovative, and sustainable processes."
+  },
+  {
+    "objectID": "posts/Lesson2/formation.html",
+    "href": "posts/Lesson2/formation.html",
+    "title": "Formation of Partial Differential Equations",
+    "section": "",
+    "text": "Partial Differential Equations (PDEs) are equations that involve multiple independent variables, an unknown function, and partial derivatives of that function. They are used to formulate problems involving functions of several variables and are fundamental in describing various physical phenomena such as heat conduction, wave propagation, and fluid dynamics.\n\n\n\nFormation of PDEs: A PDE can be formed by eliminating arbitrary constants or functions from an equation involving multiple variables. For example, from \\(F(x, y, z, a, b) = 0\\), eliminate \\(a\\) and \\(b\\) to obtain a PDE in \\(x, y, z\\).\nOrder of a PDE: The order is determined by the highest order of the partial derivative present in the equation. For instance, \\(u_{xx} + u_{yy} = 0\\) is a second-order PDE because the highest derivative is second order.\nLinear vs Nonlinear PDEs: Linear PDEs involve linear terms of the unknown function and its derivatives, while nonlinear PDEs involve nonlinear terms. For example, \\(u_t = \\alpha u_{xx}\\) is a linear PDE, and \\(u_t + u u_x = \\nu u_{xx}\\) is a nonlinear PDE.\nHomogeneous vs Inhomogeneous PDEs: Homogeneous PDEs have no terms independent of the unknown function and its derivatives, whereas inhomogeneous PDEs have additional terms. For instance, \\(u_{xx} + u_{yy} = 0\\) is homogeneous, while \\(u_{xx} + u_{yy} = f(x, y)\\) is inhomogeneous.\n\n\n\n\nThere are three approaches to form PDE from a static equation.\n\nElimination of arbitrary constants\nElimination of arbitrary functions\nElimination of arbitrary function \\(\\phi\\) from the relation \\(\\phi(u,v)=0\\), where \\(u\\) and \\(v\\) are functions of \\(x\\) ,\\(y\\) and \\(z\\)."
+  },
+  {
+    "objectID": "posts/Lesson2/formation.html#introduction-to-partial-differential-equations-pdes",
+    "href": "posts/Lesson2/formation.html#introduction-to-partial-differential-equations-pdes",
+    "title": "Formation of Partial Differential Equations",
+    "section": "",
+    "text": "Partial Differential Equations (PDEs) are equations that involve multiple independent variables, an unknown function, and partial derivatives of that function. They are used to formulate problems involving functions of several variables and are fundamental in describing various physical phenomena such as heat conduction, wave propagation, and fluid dynamics.\n\n\n\nFormation of PDEs: A PDE can be formed by eliminating arbitrary constants or functions from an equation involving multiple variables. For example, from \\(F(x, y, z, a, b) = 0\\), eliminate \\(a\\) and \\(b\\) to obtain a PDE in \\(x, y, z\\).\nOrder of a PDE: The order is determined by the highest order of the partial derivative present in the equation. For instance, \\(u_{xx} + u_{yy} = 0\\) is a second-order PDE because the highest derivative is second order.\nLinear vs Nonlinear PDEs: Linear PDEs involve linear terms of the unknown function and its derivatives, while nonlinear PDEs involve nonlinear terms. For example, \\(u_t = \\alpha u_{xx}\\) is a linear PDE, and \\(u_t + u u_x = \\nu u_{xx}\\) is a nonlinear PDE.\nHomogeneous vs Inhomogeneous PDEs: Homogeneous PDEs have no terms independent of the unknown function and its derivatives, whereas inhomogeneous PDEs have additional terms. For instance, \\(u_{xx} + u_{yy} = 0\\) is homogeneous, while \\(u_{xx} + u_{yy} = f(x, y)\\) is inhomogeneous.\n\n\n\n\nThere are three approaches to form PDE from a static equation.\n\nElimination of arbitrary constants\nElimination of arbitrary functions\nElimination of arbitrary function \\(\\phi\\) from the relation \\(\\phi(u,v)=0\\), where \\(u\\) and \\(v\\) are functions of \\(x\\) ,\\(y\\) and \\(z\\)."
+  },
+  {
+    "objectID": "posts/Lesson2/formation.html#method-1",
+    "href": "posts/Lesson2/formation.html#method-1",
+    "title": "Formation of Partial Differential Equations",
+    "section": "Method-1",
+    "text": "Method-1\n\n\n\n\n\n\nAlgorithm (Method of Elimination of arbitrary constant)\n\n\n\n\nStep 1: Differentiate partially given static equation.\nStep 2: Eliminate the arbitrary constants using the expression for partial differentials.\n\n\n\n\nExample\n\nForm a PDE from \\(z = ax + by\\).\n\nSolution:\n\nStep 1: Find the partial derivatives: \\[\n\\frac{\\partial z}{\\partial x} = a, \\quad \\frac{\\partial z}{\\partial y} = b\n\\]\nStep 2: Eliminating the arbitrary constant: the required PDE is: \\[\\begin{align*}\nz&=\\left(\\dfrac{\\partial z}{\\partial x}\\right) x+\\left(\\dfrac{\\partial z}{\\partial y}\\right) y\\\\\n\\therefore z&=px+qy\n\\end{align*}\\]\n\n\nForm a PDE from \\(z=ax+by+ab\\).\n\nSolution:\n\nStep 1: Find the partial derivatives: \\[\n\\frac{\\partial z}{\\partial x} = a, \\quad \\frac{\\partial z}{\\partial y} = b\n\\]\nStep 2: Eliminating the arbitrary constant: the required PDE is: \\[\\begin{align*}\nz&=\\left(\\dfrac{\\partial z}{\\partial x}\\right) x+\\left(\\dfrac{\\partial z}{\\partial y}\\right) y+\\left(\\dfrac{\\partial z}{\\partial x}\\right)\\cdot \\left(\\dfrac{\\partial z}{\\partial y}\\right)\\\\\n\\therefore z&=px+qy+pq\n\\end{align*}\\]\n\n\nForm a PDE from \\(x^2+y^2+(z-c)^2=a^2\\).\n\nSolution:\n\nStep 1: Find the partial derivatives:\n\n\nBy Elimination of Arbitrary Functions: Consider \\(F(x + y, z - y) = 0\\). Let \\(u = x + y\\) and \\(v = z - y\\): \\[\n\\frac{\\partial u}{\\partial x} = 1, \\quad \\frac{\\partial u}{\\partial y} = 1, \\quad \\frac{\\partial v}{\\partial y} = -1\n\\] Then the PDE is: \\[\n\\frac{\\partial z}{\\partial x} + \\frac{\\partial z}{\\partial y} = 1\n\\]\n\n\n\nExamples of Static PDEs\n\nLaplace’s Equation: \\[\nu_{xx} + u_{yy} = 0\n\\] This equation describes a steady-state distribution, such as temperature in a region where heat conduction has reached equilibrium.\nPoisson’s Equation: \\[\nu_{xx} + u_{yy} = f(x, y)\n\\] This is a generalization of Laplace’s equation with a source term \\(f(x, y)\\), often used in electrostatics and mechanical engineering.\nSteady-State Heat Equation: \\[\\nabla^2 T = 0\\] In Cartesian coordinates, this becomes: \\[\\frac{\\partial^2 T}{\\partial x^2} + \\frac{\\partial^2 T}{\\partial y^2} + \\frac{\\partial^2 T}{\\partial z^2} = 0 \\] Describing the steady-state temperature distribution in a solid.\n\nThese examples illustrate the formation and classification of PDEs, providing a foundation for understanding more complex dynamic systems described by PDEs."
+  },
+  {
+    "objectID": "posts/Lesson2/formation.html#summary",
+    "href": "posts/Lesson2/formation.html#summary",
+    "title": "Formation of Partial Differential Equations",
+    "section": "Summary",
+    "text": "Summary\n\n\n\n\n\n\nDefinition\n\n\n\nA differential equation which involve partial derivatives is called Partial Differential Equation (PDE). The general form of an \\(m\\) th order PDE is given by:\n\\[F(z,x,y,\\frac{\\partial^r z}{\\partial x^i\\partial y^n};1\\leq r\\leq m,0\n\\leq (i,n)\\leq m,i+n=r)=0\\]\n\n\n\n\n\n\n\n\nOrder and Degree of PDE\n\n\n\nOrder: The order of the highest order partial derivative present in the PDE is called its order.\nDegree: The power of the highest order partial derivative present in the PDE is called its degree."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "20MAT201-Partial Differential Equations and Complex Analysis",
+    "section": "",
+    "text": "Formation of Partial Differential Equations\n\n\n\n\n\n\nnews\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJul 22, 2024\n\n\nSiju Swamy\n\n\n\n\n\n\n\n\n\n\n\n\nPartial Differential Equation and Dynamic Systems\n\n\n\n\n\n\nnews\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJul 21, 2024\n\n\nSiju Swamy\n\n\n\n\n\n\n\n\n\n\n\n\nDemonstrating the Use of PDEs in Chemical Engineering with Python\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJul 21, 2024\n\n\nSiju SWamy\n\n\n\n\n\n\n\n\n\n\n\n\nMathematics for Chemical Engineers\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJul 18, 2024\n\n\nSiju Swamy\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Welcome to “Mathematics in Chemical Engineering,” where we explore the vital intersection of mathematical principles and chemical engineering practices. I’m Siju Swamy, a Faculty of Mathematics with a passion for demonstrating how mathematical methods drive innovation and efficiency in Chemical Engineering.\n\nOur Mission\nOur mission is to provide a comprehensive resource for understanding and applying mathematical concepts in the field of Chemical Engineering. This blog aims to bridge the gap between abstract mathematical theories and practical chemical engineering applications, showcasing how mathematics is integral to solving complex problems, optimizing processes, and advancing the discipline.\n\n\nWhat You’ll Find\nOn this blog, you’ll find a range of topics, including:\n\nHistorical Perspectives: Insights into how mathematical methods have evolved in Chemical Engineering, highlighting significant milestones and influential figures from early empirical approaches to modern computational techniques.\nCore Mathematical Concepts: In-depth articles on essential mathematical tools and techniques, such as differential equations, optimization, and computational simulations, tailored to their applications in Chemical Engineering.\nCutting-Edge Applications: Explorations of how contemporary advancements, including Artificial Intelligence and machine learning, are transforming the industry, driving efficiency, and fostering innovation.\nCase Studies and Examples: Real-world applications and case studies demonstrating the practical impact of mathematical methods on solving engineering challenges and improving processes.\n\n\n\nWhy Mathematics Matters\nMathematics is the language of engineering. It provides the framework for understanding complex systems, optimizing processes, and making informed decisions. By delving into the mathematical foundations and their applications, we aim to highlight the critical role mathematics plays in advancing Chemical Engineering and to inspire both students and professionals in the field.\n\n\nJoin the Conversation\nWe invite you to explore, learn, and engage with the content on this blog. Whether you’re a student, a researcher, or a practitioner, we hope this blog provides valuable insights and stimulates your curiosity about the mathematical underpinnings of Chemical Engineering.\nThank you for visiting, and we look forward to embarking on this mathematical journey with you!"
+  },
+  {
+    "objectID": "Day-1.html#section",
+    "href": "Day-1.html#section",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Course Objectives"
+  },
+  {
+    "objectID": "Day-1.html#section-1",
+    "href": "Day-1.html#section-1",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Course Objectives"
+  },
+  {
+    "objectID": "Day-1.html#course-objectives",
+    "href": "Day-1.html#course-objectives",
+    "title": "Course Introduction",
+    "section": "Course Objectives",
+    "text": "Course Objectives\nThis four credit core course will:\n\n\nEnable students the concept of partial differential equations, its formation and solution\nUnderstand the concept of complex valued functions, analytic functions and apply them in real life problems\nUnderstand the concept of contour integrals and apply those formulas to solve contour integrals\nEmploy the concept of residues in evaluating real integrals using complex integration\n\n\n\nLearn more: Syllabus-20MA201"
+  },
+  {
+    "objectID": "Day-1.html#section-2",
+    "href": "Day-1.html#section-2",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Course Outcomes"
+  },
+  {
+    "objectID": "Day-1.html#section-3",
+    "href": "Day-1.html#section-3",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Course Outcomes"
+  },
+  {
+    "objectID": "Day-1.html#course-outcomes",
+    "href": "Day-1.html#course-outcomes",
+    "title": "Course Introduction",
+    "section": "Course Outcomes",
+    "text": "Course Outcomes\nUpon successful completion of this course, the student will be able to:\n\n\nUnderstand the concept and the solution of partial differential equation.\n\nUnderstand complex functions, its continuity differentiability with the use of Cauchy- Riemann equations.\n\nEvaluate complex integrals using Cauchy’s integral theorem and Cauchy’s integral formula, understand the series expansion of analytic function\nUnderstand the series expansion of complex function about a singularity and apply residue theorem to compute several kinds of real integrals."
+  },
+  {
+    "objectID": "Day-1.html#section-4",
+    "href": "Day-1.html#section-4",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Important Dates"
+  },
+  {
+    "objectID": "Day-1.html#section-5",
+    "href": "Day-1.html#section-5",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Important Dates"
+  },
+  {
+    "objectID": "Day-1.html#important-dates",
+    "href": "Day-1.html#important-dates",
+    "title": "Course Introduction",
+    "section": "Important Dates",
+    "text": "Important Dates\n\n\nFirst instructional day: July 22, 2024\nFirst internal test: September 4-10, 2024\nSecond internal test: OCtober 22-30,2024\nFinal instuctional day: Nov 19,2024\nStudy leave for ESE: Nov 19-28, 2024"
+  },
+  {
+    "objectID": "Day-1.html#section-6",
+    "href": "Day-1.html#section-6",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Assessments"
+  },
+  {
+    "objectID": "Day-1.html#section-7",
+    "href": "Day-1.html#section-7",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Assessments"
+  },
+  {
+    "objectID": "Day-1.html#assessments",
+    "href": "Day-1.html#assessments",
+    "title": "Course Introduction",
+    "section": "Assessments",
+    "text": "Assessments\n\nCIE (50)ESE (100)\n\n\n\n\nInternal test-1 : 12.5 marks\nInternal test-2 : 12.5 marks\nAssignments : 15.0 marks\nAttendance : 10.0 marks\n\n\n\n\n\n\nEnd semester exam: 100 marks"
+  },
+  {
+    "objectID": "Day-1.html#section-8",
+    "href": "Day-1.html#section-8",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "PDE in Chemical Engineering"
+  },
+  {
+    "objectID": "Day-1.html#section-9",
+    "href": "Day-1.html#section-9",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "PDE in Chemical Engineering"
+  },
+  {
+    "objectID": "Day-1.html#partial-differential-equations-in-chemical-engineering",
+    "href": "Day-1.html#partial-differential-equations-in-chemical-engineering",
+    "title": "Course Introduction",
+    "section": "Partial Differential Equations in Chemical Engineering",
+    "text": "Partial Differential Equations in Chemical Engineering\n\nFundamentals of Chemical EngineeringCore Courses and Applications\n\n\n\n\nTransport Phenomena\n\nUnderstanding fluid flow, heat transfer, and mass transfer.\nPDEs describe the behavior of fluids and transfer processes in various conditions.\n\nReaction Engineering\n\nModeling chemical reactions within reactors.\nPDEs help in predicting concentration profiles and reaction rates over time and space.\n\n\n\n\n\n\n\nFluid Mechanics\nHeat Transfer\nMass Transfer\nProcess Control"
+  },
+  {
+    "objectID": "Day-1.html#takeaway",
+    "href": "Day-1.html#takeaway",
+    "title": "Course Introduction",
+    "section": "Takeaway",
+    "text": "Takeaway\n\nMastery of PDEs equips you with powerful tools to solve complex real-world problems in Chemical Engineering.\nEncourages innovation and efficiency in designing and optimizing chemical processes."
+  },
+  {
+    "objectID": "Day-1.html#section-10",
+    "href": "Day-1.html#section-10",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Complex Analysis in Chemical Engineering"
+  },
+  {
+    "objectID": "Day-1.html#section-11",
+    "href": "Day-1.html#section-11",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Complex Analysis in Chemical Engineering"
+  },
+  {
+    "objectID": "Day-1.html#complex-analysis-in-chemical-engineering",
+    "href": "Day-1.html#complex-analysis-in-chemical-engineering",
+    "title": "Course Introduction",
+    "section": "Complex Analysis in Chemical Engineering",
+    "text": "Complex Analysis in Chemical Engineering\n\nAnalytic FunctionsComplex IntegrationResidue Integration\n\n\n\n\nFlow Dynamics\n\nUse of potential flow theory in fluid dynamics.\nModeling of incompressible fluid flows and predicting flow behavior.\n\nHeat Conduction\n\nAnalytic functions for solving complex heat conduction problems.\nSimplifying the analysis of thermal distributions and boundary conditions.\n\n\n\n\n\n\n\nReaction Kinetics\n\nModeling reaction rates and mechanisms.\nSimplifying the integration of rate equations over complex pathways.\n\nMass Transfer\n\nAnalyzing diffusion processes in complex geometries.\nUse in solving integral equations in mass transfer operations.\n\n\n\n\n\n\n\nDistillation and Separation Processes\n\nAnalysis of phase equilibria and separation efficiency.\nEvaluation of complex integrals in column design and optimization.\n\nChemical Process Control\n\nStability analysis of chemical reactors and control systems.\nUse in evaluating complex integrals related to process dynamics and control strategies."
+  },
+  {
+    "objectID": "Day-1.html#takeaway-1",
+    "href": "Day-1.html#takeaway-1",
+    "title": "Course Introduction",
+    "section": "Takeaway",
+    "text": "Takeaway\n\nMastery of complex analysis equips you with tools to solve intricate problems in Chemical Engineering.\nEncourages innovative solutions and efficient problem-solving in various chemical engineering processes."
+  },
+  {
+    "objectID": "Day-1.html#a-connection-diagram",
+    "href": "Day-1.html#a-connection-diagram",
+    "title": "Course Introduction",
+    "section": "A Connection Diagram",
+    "text": "A Connection Diagram\n\nMathematics for Chemical Engineering"
+  },
+  {
+    "objectID": "Day-1.html#thank-you",
+    "href": "Day-1.html#thank-you",
+    "title": "Course Introduction",
+    "section": "Thank you",
+    "text": "Thank you"
+  },
+  {
+    "objectID": "Day-1.html#section-12",
+    "href": "Day-1.html#section-12",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "https://sijuswamy.github.io/mywebsite/"
+  },
+  {
+    "objectID": "posts/Lesson1/index.html",
+    "href": "posts/Lesson1/index.html",
+    "title": "Partial Differential Equation and Dynamic Systems",
+    "section": "",
+    "text": "Mathematics offers a robust framework for understanding both static and dynamic systems, which are pivotal in various fields of engineering and science. In this blog, we will delve into the fascinating world of Partial Differential Equations (PDEs) and dynamic systems, highlighting their importance and applications. We will start by relating static systems to algebraic equations and dynamic systems to differential equations, differentiate between Ordinary Differential Equations (ODEs) and PDEs, and then explore how to formulate PDEs by eliminating arbitrary constants in algebraic expressions. Let’s embark on this mathematical journey with some engaging real-life examples.\n\n\nStatic systems are those that do not change with time. They are characterized by equilibrium states where all forces and fluxes are balanced. In mathematical terms, static systems can often be represented by algebraic equations. These equations are used to solve problems where the variables do not depend on time.\n\n\nIn structural engineering, the design of a bridge involves calculating the forces acting on it when it is at rest. For instance, the equilibrium of forces in a beam can be described by algebraic equations that set the sum of forces and moments to zero. The familiar equations of static equilibrium are:\n\\[\\sum F_x = 0\\] \\[\\sum F_y = 0\\] \\[\\sum M = 0\\]\nThese equations help engineers determine the appropriate dimensions and materials for the bridge, ensuring it can support the intended loads without deformation or failure.\n\n\n\n\nDynamic systems, on the other hand, are characterized by changes over time. They are described by differential equations, which involve derivatives representing rates of change. Differential equations capture the essence of dynamics by relating the rate of change of a quantity to the quantity itself and its environment.\n\n\nConsider a temperature control system in a room where the temperature changes over time. The rate of temperature change in the room can be described using a differential equation that considers factors such as heat input, heat loss to the environment, and thermal mass of the room. The heat equation, which is a type of PDE, can describe how temperature evolves:\n\\[\\frac{\\partial T}{\\partial t} = \\alpha \\nabla^2 T\\]\nwhere \\(T\\) is the temperature, \\(t\\) is time, \\(\\alpha\\) is the thermal diffusivity, and \\(\\nabla^2\\) is the Laplace operator representing spatial variation.\n\n\n\n\n\n\nODEs involve functions of a single variable and their derivatives. They are used to describe systems where the change depends only on one independent variable, typically time. ODEs are commonly used for problems where spatial variation is not considered.\n\n\nThe motion of a pendulum can be described by an ODE. The differential equation for a simple harmonic oscillator is:\n\\[\\frac{d^2 x}{dt^2} + \\omega^2 x = 0\\]\nwhere \\(x\\) is the displacement, \\(t\\) is time, and \\(\\omega\\) is the angular frequency.\n\n\n\n\nPDEs involve functions of multiple variables and their partial derivatives. They are used to describe systems where the change depends on more than one independent variable, such as time and space. PDEs are essential for problems involving spatial and temporal variations.\n\n\nThe heat distribution along a rod can be modeled by a PDE. The heat equation, which describes how heat diffuses through a medium, is:\n\\[\\frac{\\partial T}{\\partial t} = \\alpha \\frac{\\partial^2 T}{\\partial x^2}\\]\nwhere \\(T\\) is the temperature, \\(t\\) is time, \\(x\\) is the spatial coordinate, and \\(\\alpha\\) is the thermal diffusivity.\n\n\n\n\n\nTo formulate PDEs, one common approach is to eliminate arbitrary constants in algebraic equations. This process involves expressing the equations in terms of partial derivatives to capture the dynamics of the system.\n\n\nConsider a vibrating string. The static equation for the string’s shape in equilibrium is:\n\\[f(x) = C_1 \\cos(kx) + C_2 \\sin(kx)\\]\nwhere $ C_1$ and $ C_2$ are arbitrary constants, and \\(k\\) is the wave number. To describe the string’s motion over time, we introduce a time-dependent term and eliminate the constants:\n\\[\\frac{\\partial^2 u}{\\partial t^2} = c^2 \\frac{\\partial^2 u}{\\partial x^2}\\]\nwhere \\(u(x, t)\\) is the displacement of the string, \\(t\\) is time, and \\(c\\) is the wave speed. This PDE describes how waves propagate along the string.\n\n\n\nConsider the temperature distribution along a rod in equilibrium:\n\\[T(x) = C_1 e^{kx} + C_2 e^{-kx}\\]\nwhere \\(C_1\\) and \\(C_2\\) are arbitrary constants, and \\(k\\) is a constant related to the thermal properties of the rod. To describe heat diffusion, introduce a time-dependent term:\n\\[\\frac{\\partial T}{\\partial t} = \\alpha \\frac{\\partial^2 T}{\\partial x^2}\\]\nwhere \\(\\alpha\\) is the thermal diffusivity of the rod. This PDE describes how heat diffuses along the rod over time.\n\n\n\nConsider the equilibrium equation for a potential field:\n\\[u(x, y) = C_1 \\cos(ax) \\cos(by) + C_2 \\sin(ax) \\sin(by)\\]\nwhere \\(C_1\\) and \\(C_2\\) are arbitrary constants, and \\(a\\) and \\(b\\) are constants related to the spatial frequency. To formulate the PDE, differentiate twice with respect to \\(x\\) and \\(y\\) :\n\\[\\frac{\\partial^2 u}{\\partial x^2} + \\frac{\\partial^2 u}{\\partial y^2} = 0\\]\nThis PDE, known as the Laplace equation, describes potential fields in equilibrium.\n\n\n\n\n\n\nClimate models use PDEs to predict weather patterns and climate changes over time and space. For example, the Navier-Stokes equations describe the flow of air and water, helping meteorologists forecast weather.\n\n\n\nIn medical imaging techniques such as MRI, PDEs are used to reconstruct images from raw data. The inverse problems in MRI involve solving PDEs to obtain clear images of internal body structures.\n\n\n\nIn financial mathematics, PDEs are used to model the prices of options and other financial derivatives. The Black-Scholes equation, a PDE, helps determine fair prices for options based on various factors.\n\n\n\n\nUnderstanding the distinction between static and dynamic systems, and between ODEs and PDEs, is crucial for tackling complex problems in engineering and science. By formulating PDEs from algebraic equations and exploring real-life applications, we gain insights into how mathematical models help solve practical challenges. Whether it’s optimizing engineering designs, predicting climate patterns, or advancing medical technologies, the role of partial differential equations is central to modern problem-solving."
+  },
+  {
+    "objectID": "posts/Lesson1/index.html#static-systems-and-algebraic-equations",
+    "href": "posts/Lesson1/index.html#static-systems-and-algebraic-equations",
+    "title": "Partial Differential Equation and Dynamic Systems",
+    "section": "",
+    "text": "Static systems are those that do not change with time. They are characterized by equilibrium states where all forces and fluxes are balanced. In mathematical terms, static systems can often be represented by algebraic equations. These equations are used to solve problems where the variables do not depend on time.\n\n\nIn structural engineering, the design of a bridge involves calculating the forces acting on it when it is at rest. For instance, the equilibrium of forces in a beam can be described by algebraic equations that set the sum of forces and moments to zero. The familiar equations of static equilibrium are:\n\\[\\sum F_x = 0\\] \\[\\sum F_y = 0\\] \\[\\sum M = 0\\]\nThese equations help engineers determine the appropriate dimensions and materials for the bridge, ensuring it can support the intended loads without deformation or failure."
+  },
+  {
+    "objectID": "posts/Lesson1/index.html#dynamic-systems-and-differential-equations",
+    "href": "posts/Lesson1/index.html#dynamic-systems-and-differential-equations",
+    "title": "Partial Differential Equation and Dynamic Systems",
+    "section": "",
+    "text": "Dynamic systems, on the other hand, are characterized by changes over time. They are described by differential equations, which involve derivatives representing rates of change. Differential equations capture the essence of dynamics by relating the rate of change of a quantity to the quantity itself and its environment.\n\n\nConsider a temperature control system in a room where the temperature changes over time. The rate of temperature change in the room can be described using a differential equation that considers factors such as heat input, heat loss to the environment, and thermal mass of the room. The heat equation, which is a type of PDE, can describe how temperature evolves:\n\\[\\frac{\\partial T}{\\partial t} = \\alpha \\nabla^2 T\\]\nwhere \\(T\\) is the temperature, \\(t\\) is time, \\(\\alpha\\) is the thermal diffusivity, and \\(\\nabla^2\\) is the Laplace operator representing spatial variation."
+  },
+  {
+    "objectID": "posts/Lesson1/index.html#ode-vs.-pde-key-differences",
+    "href": "posts/Lesson1/index.html#ode-vs.-pde-key-differences",
+    "title": "Partial Differential Equation and Dynamic Systems",
+    "section": "",
+    "text": "ODEs involve functions of a single variable and their derivatives. They are used to describe systems where the change depends only on one independent variable, typically time. ODEs are commonly used for problems where spatial variation is not considered.\n\n\nThe motion of a pendulum can be described by an ODE. The differential equation for a simple harmonic oscillator is:\n\\[\\frac{d^2 x}{dt^2} + \\omega^2 x = 0\\]\nwhere \\(x\\) is the displacement, \\(t\\) is time, and \\(\\omega\\) is the angular frequency.\n\n\n\n\nPDEs involve functions of multiple variables and their partial derivatives. They are used to describe systems where the change depends on more than one independent variable, such as time and space. PDEs are essential for problems involving spatial and temporal variations.\n\n\nThe heat distribution along a rod can be modeled by a PDE. The heat equation, which describes how heat diffuses through a medium, is:\n\\[\\frac{\\partial T}{\\partial t} = \\alpha \\frac{\\partial^2 T}{\\partial x^2}\\]\nwhere \\(T\\) is the temperature, \\(t\\) is time, \\(x\\) is the spatial coordinate, and \\(\\alpha\\) is the thermal diffusivity."
+  },
+  {
+    "objectID": "posts/Lesson1/index.html#formulating-pdes-from-algebraic-equations",
+    "href": "posts/Lesson1/index.html#formulating-pdes-from-algebraic-equations",
+    "title": "Partial Differential Equation and Dynamic Systems",
+    "section": "",
+    "text": "To formulate PDEs, one common approach is to eliminate arbitrary constants in algebraic equations. This process involves expressing the equations in terms of partial derivatives to capture the dynamics of the system.\n\n\nConsider a vibrating string. The static equation for the string’s shape in equilibrium is:\n\\[f(x) = C_1 \\cos(kx) + C_2 \\sin(kx)\\]\nwhere $ C_1$ and $ C_2$ are arbitrary constants, and \\(k\\) is the wave number. To describe the string’s motion over time, we introduce a time-dependent term and eliminate the constants:\n\\[\\frac{\\partial^2 u}{\\partial t^2} = c^2 \\frac{\\partial^2 u}{\\partial x^2}\\]\nwhere \\(u(x, t)\\) is the displacement of the string, \\(t\\) is time, and \\(c\\) is the wave speed. This PDE describes how waves propagate along the string.\n\n\n\nConsider the temperature distribution along a rod in equilibrium:\n\\[T(x) = C_1 e^{kx} + C_2 e^{-kx}\\]\nwhere \\(C_1\\) and \\(C_2\\) are arbitrary constants, and \\(k\\) is a constant related to the thermal properties of the rod. To describe heat diffusion, introduce a time-dependent term:\n\\[\\frac{\\partial T}{\\partial t} = \\alpha \\frac{\\partial^2 T}{\\partial x^2}\\]\nwhere \\(\\alpha\\) is the thermal diffusivity of the rod. This PDE describes how heat diffuses along the rod over time.\n\n\n\nConsider the equilibrium equation for a potential field:\n\\[u(x, y) = C_1 \\cos(ax) \\cos(by) + C_2 \\sin(ax) \\sin(by)\\]\nwhere \\(C_1\\) and \\(C_2\\) are arbitrary constants, and \\(a\\) and \\(b\\) are constants related to the spatial frequency. To formulate the PDE, differentiate twice with respect to \\(x\\) and \\(y\\) :\n\\[\\frac{\\partial^2 u}{\\partial x^2} + \\frac{\\partial^2 u}{\\partial y^2} = 0\\]\nThis PDE, known as the Laplace equation, describes potential fields in equilibrium."
+  },
+  {
+    "objectID": "posts/Lesson1/index.html#real-life-applications",
+    "href": "posts/Lesson1/index.html#real-life-applications",
+    "title": "Partial Differential Equation and Dynamic Systems",
+    "section": "",
+    "text": "Climate models use PDEs to predict weather patterns and climate changes over time and space. For example, the Navier-Stokes equations describe the flow of air and water, helping meteorologists forecast weather.\n\n\n\nIn medical imaging techniques such as MRI, PDEs are used to reconstruct images from raw data. The inverse problems in MRI involve solving PDEs to obtain clear images of internal body structures.\n\n\n\nIn financial mathematics, PDEs are used to model the prices of options and other financial derivatives. The Black-Scholes equation, a PDE, helps determine fair prices for options based on various factors."
+  },
+  {
+    "objectID": "posts/Lesson1/index.html#conclusion",
+    "href": "posts/Lesson1/index.html#conclusion",
+    "title": "Partial Differential Equation and Dynamic Systems",
+    "section": "",
+    "text": "Understanding the distinction between static and dynamic systems, and between ODEs and PDEs, is crucial for tackling complex problems in engineering and science. By formulating PDEs from algebraic equations and exploring real-life applications, we gain insights into how mathematical models help solve practical challenges. Whether it’s optimizing engineering designs, predicting climate patterns, or advancing medical technologies, the role of partial differential equations is central to modern problem-solving."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Demonstrating the Use of PDEs in Chemical Engineering with Python",
+    "section": "",
+    "text": "Partial Differential Equations (PDEs) are essential in modeling various phenomena in Chemical Engineering. They describe how processes evolve over time and space, such as heat conduction, diffusion, and reaction kinetics. In this blog, we will demonstrate how to use PDEs to model a common problem in chemical engineering: heat conduction in a one-dimensional rod. We’ll use Python to solve the PDE and visualize the results.\n\n\nHeat conduction in a one-dimensional rod can be modeled using the heat equation, a type of PDE. The heat equation describes how temperature changes over time and space in the rod.\n\n\nThe heat equation is given by:\n\\[\\frac{\\partial T(x, t)}{\\partial t} = \\alpha \\frac{\\partial^2 T(x, t)}{\\partial x^2}\\]\nwhere: - \\(T(x, t)\\) is the temperature at position $x $ and time \\(t\\) , - \\(\\alpha\\) is the thermal diffusivity of the rod.\n\n\n\nTo solve the heat equation, we need to specify boundary and initial conditions:\n\nInitial Condition: The initial temperature distribution in the rod.\nBoundary Conditions: The temperature at the ends of the rod (can be fixed or insulated).\n\n\n\n\n\nWe will use Python’s numerical libraries to solve the heat equation. The method we will use is the Finite Difference Method (FDM), which approximates the PDE by discretizing the spatial and temporal domains.\n\n\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.animation import FuncAnimation\n# Parameters\nL = 10.0       # Length of the rod\nT_max = 2.0    # Maximum time\nNx = 50        # Number of spatial points\nNt = 100       # Number of time steps\nalpha = 0.01   # Thermal diffusivity\n\n# Discretization\ndx = L / (Nx - 1)\ndt = T_max / Nt\nx = np.linspace(0, L, Nx)\nu = np.zeros((Nx, Nt + 1))\n\n# Initial Condition\nu[:, 0] = np.sin(np.pi * x / L)\n\n# Boundary Conditions\nu[0, :] = 0\nu[-1, :] = 0\nfor n in range(0, Nt):\n    for i in range(1, Nx - 1):\n        u[i, n + 1] = u[i, n] + alpha * dt / dx**2 * (u[i + 1, n] - 2 * u[i, n] + u[i - 1, n])\nfig, ax = plt.subplots()\nline, = ax.plot(x, u[:, 0], label='t=0')\nax.set_xlim(0, L)\nax.set_ylim(-1, 1)\nax.set_xlabel('Position (x)')\nax.set_ylabel('Temperature (T)')\nax.set_title('Heat Conduction in a Rod')\nax.legend()\n\ndef update(n):\n    line.set_ydata(u[:, n])\n    ax.set_title(f'Heat Conduction in a Rod (t={n * dt:.2f}s)')\n    return line,\n\nani = FuncAnimation(fig, update, frames=range(0, Nt, int(Nt / 10)), blit=True)\nplt.show()"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html#problem-statement-heat-conduction-in-a-rod",
+    "href": "posts/post-with-code/index.html#problem-statement-heat-conduction-in-a-rod",
+    "title": "Demonstrating the Use of PDEs in Chemical Engineering with Python",
+    "section": "",
+    "text": "Heat conduction in a one-dimensional rod can be modeled using the heat equation, a type of PDE. The heat equation describes how temperature changes over time and space in the rod.\n\n\nThe heat equation is given by:\n\\[\\frac{\\partial T(x, t)}{\\partial t} = \\alpha \\frac{\\partial^2 T(x, t)}{\\partial x^2}\\]\nwhere: - \\(T(x, t)\\) is the temperature at position $x $ and time \\(t\\) , - \\(\\alpha\\) is the thermal diffusivity of the rod.\n\n\n\nTo solve the heat equation, we need to specify boundary and initial conditions:\n\nInitial Condition: The initial temperature distribution in the rod.\nBoundary Conditions: The temperature at the ends of the rod (can be fixed or insulated)."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html#python-code-for-solving-the-heat-equation",
+    "href": "posts/post-with-code/index.html#python-code-for-solving-the-heat-equation",
+    "title": "Demonstrating the Use of PDEs in Chemical Engineering with Python",
+    "section": "",
+    "text": "We will use Python’s numerical libraries to solve the heat equation. The method we will use is the Finite Difference Method (FDM), which approximates the PDE by discretizing the spatial and temporal domains.\n\n\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.animation import FuncAnimation\n# Parameters\nL = 10.0       # Length of the rod\nT_max = 2.0    # Maximum time\nNx = 50        # Number of spatial points\nNt = 100       # Number of time steps\nalpha = 0.01   # Thermal diffusivity\n\n# Discretization\ndx = L / (Nx - 1)\ndt = T_max / Nt\nx = np.linspace(0, L, Nx)\nu = np.zeros((Nx, Nt + 1))\n\n# Initial Condition\nu[:, 0] = np.sin(np.pi * x / L)\n\n# Boundary Conditions\nu[0, :] = 0\nu[-1, :] = 0\nfor n in range(0, Nt):\n    for i in range(1, Nx - 1):\n        u[i, n + 1] = u[i, n] + alpha * dt / dx**2 * (u[i + 1, n] - 2 * u[i, n] + u[i - 1, n])\nfig, ax = plt.subplots()\nline, = ax.plot(x, u[:, 0], label='t=0')\nax.set_xlim(0, L)\nax.set_ylim(-1, 1)\nax.set_xlabel('Position (x)')\nax.set_ylabel('Temperature (T)')\nax.set_title('Heat Conduction in a Rod')\nax.legend()\n\ndef update(n):\n    line.set_ydata(u[:, n])\n    ax.set_title(f'Heat Conduction in a Rod (t={n * dt:.2f}s)')\n    return line,\n\nani = FuncAnimation(fig, update, frames=range(0, Nt, int(Nt / 10)), blit=True)\nplt.show()"
+  },
+  {
+    "objectID": "Presentations/day-1.html#section",
+    "href": "Presentations/day-1.html#section",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Course Objectives"
+  },
+  {
+    "objectID": "Presentations/day-1.html#section-1",
+    "href": "Presentations/day-1.html#section-1",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Course Objectives"
+  },
+  {
+    "objectID": "Presentations/day-1.html#course-objectives",
+    "href": "Presentations/day-1.html#course-objectives",
+    "title": "Course Introduction",
+    "section": "Course Objectives",
+    "text": "Course Objectives\nThis four credit core course is designed:\n\n\nTo make the students proficient in the coding of linear algebra operations using Python.\n\nTo train the students in defining, applying and manipulating vectors and matrices computationally and performing matrix operations with confidence.\n\nUnderstand the concept of contour integrals and apply those formulas to solve contour integrals\nTo train the students in the implementation of PCA for data compression and feature selection.\nTo develop student’s capabilities in applying matrix operations for image filtering and compression.\n\n\n\nLearn more: Syllabus-20MA201"
+  },
+  {
+    "objectID": "Presentations/day-1.html#section-2",
+    "href": "Presentations/day-1.html#section-2",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Course Outcomes"
+  },
+  {
+    "objectID": "Presentations/day-1.html#section-3",
+    "href": "Presentations/day-1.html#section-3",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Course Outcomes"
+  },
+  {
+    "objectID": "Presentations/day-1.html#course-outcomes",
+    "href": "Presentations/day-1.html#course-outcomes",
+    "title": "Course Introduction",
+    "section": "Course Outcomes",
+    "text": "Course Outcomes\nUpon successful completion of this course, the student will be able to:\n\n\nSet up a computational environment to represent and process the linear algebraic constructs in applied mathematics.\n\nUse advanced Python libraries to represent, model and solve real-time problems with Linear Algebra.\n\nUse linear algebra to transform data and apply dimensionality reduction.\nUse linear algebra to perform basic image processing tasks.\nUse matrix operations to interpret both theoretical and computational aspects of Machine Learning and Data Science."
+  },
+  {
+    "objectID": "Presentations/day-1.html#section-4",
+    "href": "Presentations/day-1.html#section-4",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Important Dates"
+  },
+  {
+    "objectID": "Presentations/day-1.html#section-5",
+    "href": "Presentations/day-1.html#section-5",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Important Dates"
+  },
+  {
+    "objectID": "Presentations/day-1.html#important-dates",
+    "href": "Presentations/day-1.html#important-dates",
+    "title": "Course Introduction",
+    "section": "Important Dates",
+    "text": "Important Dates\n\n\nFirst instructional day: July 22, 2024\nFirst internal test: September 4-10, 2024\nSecond internal test: OCtober 22-30,2024\nFinal instuctional day: Nov 19,2024\nStudy leave for ESE: Nov 19-28, 2024"
+  },
+  {
+    "objectID": "Presentations/day-1.html#section-6",
+    "href": "Presentations/day-1.html#section-6",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Assessments"
+  },
+  {
+    "objectID": "Presentations/day-1.html#section-7",
+    "href": "Presentations/day-1.html#section-7",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Assessments"
+  },
+  {
+    "objectID": "Presentations/day-1.html#assessments",
+    "href": "Presentations/day-1.html#assessments",
+    "title": "Course Introduction",
+    "section": "Assessments",
+    "text": "Assessments\n\nCIE (70)ESE (80)\n\n\n\n\nInternal test-1 : 10.0 marks\nInternal test-2 : 10.0 marks\nInternal lab test-1 :5.0 marks\nInternal lab test-2 :5.0 marks\nDay to day lab work :15.0 marks\nAssignments : 15.0 marks\nAttendance : 10.0 marks\n\n\n\n\n\n\nEnd semester exam: 80 marks"
+  },
+  {
+    "objectID": "Presentations/day-1.html#section-8",
+    "href": "Presentations/day-1.html#section-8",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Computational Linear Algebra"
+  },
+  {
+    "objectID": "Presentations/day-1.html#section-9",
+    "href": "Presentations/day-1.html#section-9",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "Computational Linear Algebra"
+  },
+  {
+    "objectID": "Presentations/day-1.html#course-overview",
+    "href": "Presentations/day-1.html#course-overview",
+    "title": "Course Introduction",
+    "section": "Course Overview",
+    "text": "Course Overview\n\nPython for Linear AlgebraTransforming Linear Algebra to Computational LanguagePython Libraries for Computational Linear AlgebraAdvanced ApplicationsLinear Algebra in Real-time Cases\n\n\n\n\nPseudocode\nPseudocode for basic matrix operations\nPython basics\n\n\n\n\n\n\nFluid Mechanics\nHeat Transfer\nMass Transfer\nProcess Control\n\n\n\n\n\n\nFluid Mechanics\nHeat Transfer\nMass Transfer\nProcess Control\n\n\n\n\n\n\nFluid Mechanics\nHeat Transfer\nMass Transfer\nProcess Control\n\n\n\n\n\n\nFluid Mechanics\nHeat Transfer\nMass Transfer\nProcess Control"
+  },
+  {
+    "objectID": "Presentations/day-1.html#takeaway",
+    "href": "Presentations/day-1.html#takeaway",
+    "title": "Course Introduction",
+    "section": "Takeaway",
+    "text": "Takeaway\n\nMastery of PDEs equips you with powerful tools to solve complex real-world problems in Chemical Engineering.\nEncourages innovation and efficiency in designing and optimizing chemical processes."
+  },
+  {
+    "objectID": "Presentations/day-1.html#thank-you",
+    "href": "Presentations/day-1.html#thank-you",
+    "title": "Course Introduction",
+    "section": "Thank you",
+    "text": "Thank you"
+  },
+  {
+    "objectID": "Presentations/day-1.html#section-10",
+    "href": "Presentations/day-1.html#section-10",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "https://sijuswamy.github.io/Computational-Linear-Algebra/module_1"
+  }
+]
