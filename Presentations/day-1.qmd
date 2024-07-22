@@ -1,0 +1,213 @@
+---
+title: "Course Introduction"
+subtitle: "Computational Linear Algebra"
+format:
+  revealjs: 
+    theme: dark
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/intel-gits.png
+    css: styles.css
+    footer: <https://sijuswamy.github.io/Computational-Linear-Algebra/module_1>
+resources:
+  - demo.pdf
+---
+
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Course Objectives
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Course Objectives
+:::
+
+## Course Objectives
+This four credit core course is designed:
+
+::: incremental
+
+-   To make the students proficient in the coding of linear algebra operations using Python.  
+-   To train the students in defining, applying and manipulating vectors and matrices computationally and performing matrix operations with confidence.  
+-   Understand the concept of contour integrals and apply those formulas to solve contour integrals 
+-   To train the students in the implementation of PCA for data compression and feature selection. 
+-   To  develop student’s capabilities in applying matrix operations for image filtering and compression. 
+
+:::
+::: footer
+Learn more: [Syllabus-20MA201](https://quarto.org/docs/presentations/revealjs/#incremental-lists)
+:::
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Course Outcomes
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Course Outcomes
+:::
+## Course Outcomes {.smaller}
+Upon successful completion of this course, the student will be able to:
+
+::: incremental
+
+-   Set up a computational environment to represent and process the linear algebraic constructs in applied mathematics.  
+-   Use advanced Python libraries to represent, model and solve real-time problems with Linear Algebra.   
+-   Use linear algebra to transform data and apply dimensionality reduction. 
+-   Use linear algebra to perform basic image processing tasks. 
+-   Use matrix operations to interpret both theoretical and computational aspects of Machine Learning and Data Science.   
+
+:::
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Important Dates
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Important Dates
+:::
+## Important Dates
+
+::: incremental
+
+- First instructional day: July 22, 2024
+- First internal test: September 4-10, 2024
+- Second internal test: OCtober 22-30,2024
+- Final instuctional day: Nov 19,2024
+- Study leave for ESE: Nov 19-28, 2024
+
+:::
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Assessments
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Assessments
+:::
+## Assessments
+::: {.panel-tabset}
+
+### CIE (70)
+::: incremental
+-  Internal test-1 : 10.0 marks
+-  Internal test-2 : 10.0 marks
+-  Internal lab test-1 :5.0 marks
+-  Internal lab test-2 :5.0 marks
+-  Day to day lab work :15.0 marks
+-  Assignments     : 15.0 marks
+-  Attendance      : 10.0 marks
+:::
+
+
+### ESE (80)
+
+::: incremental
+
+-  End semester exam: 80 marks
+
+:::
+
+:::
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Computational Linear Algebra
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Computational Linear Algebra
+:::
+## Course Overview{.smaller}
+
+::: {.panel-tabset}
+
+### Python for Linear Algebra 
+
+::: incremental
+-   Pseudocode
+-   Pseudocode for basic matrix operations
+-   Python basics
+:::
+### Transforming Linear Algebra to Computational Language
+
+::: incremental
+
+- Fluid Mechanics
+- Heat Transfer
+- Mass Transfer
+- Process Control
+:::
+
+### Python Libraries for Computational Linear Algebra 
+::: incremental
+
+- Fluid Mechanics
+- Heat Transfer
+- Mass Transfer
+- Process Control
+:::
+### Advanced Applications
+::: incremental
+
+- Fluid Mechanics
+- Heat Transfer
+- Mass Transfer
+- Process Control
+:::
+###  Linear Algebra in Real-time Cases
+::: incremental
+
+- Fluid Mechanics
+- Heat Transfer
+- Mass Transfer
+- Process Control
+:::
+:::
+
+## Takeaway{.smaller}
+
+  - Mastery of PDEs equips you with powerful tools to solve complex real-world problems in Chemical Engineering.
+  - Encourages innovation and efficiency in designing and optimizing chemical processes.
+
+
+## Thank you{auto-animate=true auto-animate-easing="ease-in-out"}
+
+::: {.r-hstack}
+::: {data-id="box1" auto-animate-delay="0" style="background: #2780e3; width: 200px; height: 150px; margin: 10px;"}
+:::
+
+::: {data-id="box2" auto-animate-delay="0.1" style="background: #3fb618; width: 200px; height: 150px; margin: 10px;"}
+:::
+
+::: {data-id="box3" auto-animate-delay="0.2" style="background: #e83e8c; width: 200px; height: 150px; margin: 10px;"}
+:::
+:::
+
+## {auto-animate=true auto-animate-easing="ease-in-out"}
+
+::: {.r-stack}
+::: {data-id="box1" style="background: #2780e3; width: 350px; height: 350px; border-radius: 200px;"}
+:::
+
+::: {data-id="box2" style="background: #3fb618; width: 250px; height: 250px; border-radius: 200px;"}
+:::
+
+::: {data-id="box3" style="background: #e83e8c; width: 150px; height: 150px; border-radius: 200px;"}
+:::
+:::

@@ -1,0 +1,251 @@
+---
+title: "Course Introduction"
+subtitle: "20MAT201: Partial Differential Equations and Complex Analysis"
+format:
+  revealjs: 
+    theme: dark
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/intel-gits.png
+    css: styles.css
+    footer: <https://sijuswamy.github.io/mywebsite/>
+resources:
+  - demo.pdf
+---
+
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Course Objectives
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Course Objectives
+:::
+
+## Course Objectives
+This four credit core course will:
+
+::: incremental
+
+-   Enable students the concept of partial differential equations, its formation and solution 
+-   Understand the concept of complex valued functions, analytic functions and apply them in real life problems 
+-   Understand the concept of contour integrals and apply those formulas to solve contour integrals 
+-   Employ the concept of residues in evaluating real integrals using complex integration 
+
+:::
+::: footer
+Learn more: [Syllabus-20MA201](https://quarto.org/docs/presentations/revealjs/#incremental-lists)
+:::
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Course Outcomes
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Course Outcomes
+:::
+## Course Outcomes {.smaller}
+Upon successful completion of this course, the student will be able to:
+
+::: incremental
+
+-   Understand the concept and the solution of partial differential equation.  
+-   Understand complex functions, its continuity differentiability with the use of Cauchy- Riemann equations.  
+-   Evaluate complex integrals using Cauchy’s integral theorem and Cauchy’s integral formula, understand the series expansion of analytic function 
+-   Understand the series expansion of complex function about a singularity and apply residue theorem to compute several kinds of real integrals.  
+
+:::
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Important Dates
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Important Dates
+:::
+## Important Dates
+
+::: incremental
+
+- First instructional day: July 22, 2024
+- First internal test: September 4-10, 2024
+- Second internal test: OCtober 22-30,2024
+- Final instuctional day: Nov 19,2024
+- Study leave for ESE: Nov 19-28, 2024
+
+:::
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Assessments
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Assessments
+:::
+## Assessments
+::: {.panel-tabset}
+
+### CIE (50)
+::: incremental
+-  Internal test-1 : 12.5 marks
+-  Internal test-2 : 12.5 marks
+-  Assignments     : 15.0 marks
+-  Attendance      : 10.0 marks
+:::
+
+
+### ESE (100)
+
+::: incremental
+
+-  End semester exam: 100 marks
+
+:::
+
+:::
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+PDE in Chemical Engineering
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+PDE in Chemical Engineering
+:::
+## Partial Differential Equations in Chemical Engineering{.smaller}
+
+::: {.panel-tabset}
+
+### Fundamentals of Chemical Engineering
+
+::: incremental
+
+- **Transport Phenomena**
+
+    - Understanding fluid flow, heat transfer, and mass transfer.
+    - PDEs describe the behavior of fluids and transfer processes in various conditions.
+
+- **Reaction Engineering**
+    - Modeling chemical reactions within reactors.
+    - PDEs help in predicting concentration profiles and reaction rates over time and space.
+:::
+### Core Courses and Applications
+
+::: incremental
+
+- Fluid Mechanics
+- Heat Transfer
+- Mass Transfer
+- Process Control
+:::
+:::
+
+## Takeaway{.smaller}
+
+  - Mastery of PDEs equips you with powerful tools to solve complex real-world problems in Chemical Engineering.
+  - Encourages innovation and efficiency in designing and optimizing chemical processes.
+
+
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Complex Analysis in Chemical Engineering
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Complex Analysis in Chemical Engineering
+:::
+## Complex Analysis in Chemical Engineering{.smaller}
+
+::: {.panel-tabset}
+
+### Analytic Functions
+
+::: incremental
+- **Flow Dynamics**
+    - Use of potential flow theory in fluid dynamics.
+    - Modeling of incompressible fluid flows and predicting flow behavior.
+- **Heat Conduction**
+    - Analytic functions for solving complex heat conduction problems.
+    - Simplifying the analysis of thermal distributions and boundary conditions.
+:::
+
+### Complex Integration
+
+::: incremental
+
+- **Reaction Kinetics**
+    - Modeling reaction rates and mechanisms.
+    - Simplifying the integration of rate equations over complex pathways.
+
+- **Mass Transfer**
+    - Analyzing diffusion processes in complex geometries.
+    - Use in solving integral equations in mass transfer operations.
+
+:::
+
+### Residue Integration
+
+::: incremental
+- **Distillation and Separation Processes**
+    - Analysis of phase equilibria and separation efficiency.
+    - Evaluation of complex integrals in column design and optimization.
+- **Chemical Process Control**
+    - Stability analysis of chemical reactors and control systems.
+    - Use in evaluating complex integrals related to process dynamics and control strategies.
+
+:::
+:::
+
+## Takeaway{.smaller}
+
+- Mastery of complex analysis equips you with tools to solve intricate problems in Chemical Engineering.
+- Encourages innovative solutions and efficient problem-solving in various chemical engineering processes.
+
+## A Connection Diagram
+
+![Mathematics for Chemical Engineering](images/mfig001.jpg)
+
+## Thank you{auto-animate=true auto-animate-easing="ease-in-out"}
+
+::: {.r-hstack}
+::: {data-id="box1" auto-animate-delay="0" style="background: #2780e3; width: 200px; height: 150px; margin: 10px;"}
+:::
+
+::: {data-id="box2" auto-animate-delay="0.1" style="background: #3fb618; width: 200px; height: 150px; margin: 10px;"}
+:::
+
+::: {data-id="box3" auto-animate-delay="0.2" style="background: #e83e8c; width: 200px; height: 150px; margin: 10px;"}
+:::
+:::
+
+## {auto-animate=true auto-animate-easing="ease-in-out"}
+
+::: {.r-stack}
+::: {data-id="box1" style="background: #2780e3; width: 350px; height: 350px; border-radius: 200px;"}
+:::
+
+::: {data-id="box2" style="background: #3fb618; width: 250px; height: 250px; border-radius: 200px;"}
+:::
+
+::: {data-id="box3" style="background: #e83e8c; width: 150px; height: 150px; border-radius: 200px;"}
+:::
+:::

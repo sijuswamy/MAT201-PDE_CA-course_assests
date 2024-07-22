@@ -1,0 +1,29 @@
+{
+  "index.qmd": {
+    "index.html": "1f74ced4"
+  },
+  "about.qmd": {
+    "about.html": "11c6804c"
+  },
+  "posts/post-with-code/index.qmd": {
+    "index.html": "e863d236"
+  },
+  "posts/welcome/index.qmd": {
+    "index.html": "9d5e30eb"
+  },
+  "Day-1.qmd": {
+    "Day-1.html": "efda68ca"
+  },
+  "posts/Lesson1/index.qmd": {
+    "index.html": "f33ede0c"
+  },
+  "Presentations/formation.qmd": {
+    "formation.html": "25e48c88"
+  },
+  "posts/Lesson2/formation.qmd": {
+    "formation.html": "b9e9f088"
+  },
+  "Presentations/day-1.qmd": {
+    "day-1.html": "aa2760a3"
+  }
+}

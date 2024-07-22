@@ -1,0 +1,86 @@
+---
+title: "Demonstrating the Use of PDEs in Chemical Engineering with Python"
+author: "Siju SWamy"
+date: "2024-07-21"
+categories: [news, code, analysis]
+image: "image.jpg"
+execute:
+  echo: false
+jupyter: python3
+---
+
+# Demonstrating the Use of PDEs in Chemical Engineering with Python
+
+Partial Differential Equations (PDEs) are essential in modeling various phenomena in Chemical Engineering. They describe how processes evolve over time and space, such as heat conduction, diffusion, and reaction kinetics. In this blog, we will demonstrate how to use PDEs to model a common problem in chemical engineering: heat conduction in a one-dimensional rod. We'll use Python to solve the PDE and visualize the results.
+
+## Problem Statement: Heat Conduction in a Rod
+
+Heat conduction in a one-dimensional rod can be modeled using the heat equation, a type of PDE. The heat equation describes how temperature changes over time and space in the rod.
+
+### The Heat Equation
+
+The heat equation is given by:
+
+$$\frac{\partial T(x, t)}{\partial t} = \alpha \frac{\partial^2 T(x, t)}{\partial x^2}$$
+
+where:
+- $T(x, t)$  is the temperature at position $x $  and time $t$ ,
+- $\alpha$  is the thermal diffusivity of the rod.
+
+### Boundary and Initial Conditions
+
+To solve the heat equation, we need to specify boundary and initial conditions:
+
+- **Initial Condition:** The initial temperature distribution in the rod.
+- **Boundary Conditions:** The temperature at the ends of the rod (can be fixed or insulated).
+
+## Python Code for Solving the Heat Equation
+
+We will use Python's numerical libraries to solve the heat equation. The method we will use is the Finite Difference Method (FDM), which approximates the PDE by discretizing the spatial and temporal domains.
+
+### Step 1: Import Required Libraries
+
+```{python}
+#| echo: true
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+# Parameters
+L = 10.0       # Length of the rod
+T_max = 2.0    # Maximum time
+Nx = 50        # Number of spatial points
+Nt = 100       # Number of time steps
+alpha = 0.01   # Thermal diffusivity
+
+# Discretization
+dx = L / (Nx - 1)
+dt = T_max / Nt
+x = np.linspace(0, L, Nx)
+u = np.zeros((Nx, Nt + 1))
+
+# Initial Condition
+u[:, 0] = np.sin(np.pi * x / L)
+
+# Boundary Conditions
+u[0, :] = 0
+u[-1, :] = 0
+for n in range(0, Nt):
+    for i in range(1, Nx - 1):
+        u[i, n + 1] = u[i, n] + alpha * dt / dx**2 * (u[i + 1, n] - 2 * u[i, n] + u[i - 1, n])
+fig, ax = plt.subplots()
+line, = ax.plot(x, u[:, 0], label='t=0')
+ax.set_xlim(0, L)
+ax.set_ylim(-1, 1)
+ax.set_xlabel('Position (x)')
+ax.set_ylabel('Temperature (T)')
+ax.set_title('Heat Conduction in a Rod')
+ax.legend()
+
+def update(n):
+    line.set_ydata(u[:, n])
+    ax.set_title(f'Heat Conduction in a Rod (t={n * dt:.2f}s)')
+    return line,
+
+ani = FuncAnimation(fig, update, frames=range(0, Nt, int(Nt / 10)), blit=True)
+plt.show()
+```

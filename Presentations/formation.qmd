@@ -1,0 +1,115 @@
+---
+title: "Formation of Partial Differential Equation"
+subtitle: "Module-1"
+format:
+  revealjs: 
+    theme: dark
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/intel-gits.png
+    css: styles.css
+    footer: <https://sijuswamy.github.io/mywebsite/>
+resources:
+  - demo.pdf
+---
+
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Partial Differential Equation
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Partial Differential Equation
+:::
+## Basics
+::: {.callout-note}
+## Definition
+A differential equation which involve partial derivatives is called Partial Differential Equation (PDE). The general form of an $m$ th order PDE is given by:
+
+$$F(z,x,y,\frac{\partial^r z}{\partial x^i\partial y^n};1\leq r\leq m,0
+\leq (i,n)\leq m,i+n=r)=0$$
+:::
+
+::: {.callout-tip}
+### Order and Degree of PDE
+
+**Order:** The order of the highest order partial derivative present in the PDE is called its order.
+
+**Degree:** The power of the highest order partial derivative present in the PDE is called its degree.
+
+:::
+::: footer
+Learn more: [Syllabus-20MA201](https://quarto.org/docs/presentations/revealjs/#incremental-lists)
+:::
+
+## Examples
+
+::: incremental
+
+1. $\frac{\partial z}{\partial x}+  \frac{\partial z}{\partial y}=z$
+2. $p+q+pq+z$
+3. $z=p+q+xypq$
+4. $\frac{\partial u}{\partial t}=\alpha^2\frac{\partial^2 u}{\partial x^2}$
+5. $\frac{\partial u}{\partial t}-\nabla^2 u=f(u)$
+:::
+
+
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Formation of PDE
+:::
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Formation of PDE
+:::
+## Methods
+There are three approaches to form PDE from a static equation.
+
+1. Elimination of arbitrary constants
+2. Elimination of arbitrary functions
+3. Elimination of arbitrary function $\phi$ from the relation $\phi(u,v)=0$, where $u$ and $v$ are functions of $x$ ,$y$ and $z$.
+
+## Method-1 {.smaller}
+::: {.callout-note}
+## Algorithm (Elimination Method)
+- **Step 1:** Differentiate partially given static equation.
+- **Step 2:** Eliminate the arbitrary constants using the expression for partial differentials.
+:::
+### Example
+::: incremental
+
+1. Form a PDE from the static equation $z=ax+by+ab$.
+:::
+
+## Thank you{auto-animate=true auto-animate-easing="ease-in-out"}
+
+::: {.r-hstack}
+::: {data-id="box1" auto-animate-delay="0" style="background: #2780e3; width: 200px; height: 150px; margin: 10px;"}
+:::
+
+::: {data-id="box2" auto-animate-delay="0.1" style="background: #3fb618; width: 200px; height: 150px; margin: 10px;"}
+:::
+
+::: {data-id="box3" auto-animate-delay="0.2" style="background: #e83e8c; width: 200px; height: 150px; margin: 10px;"}
+:::
+:::
+
+## {auto-animate=true auto-animate-easing="ease-in-out"}
+
+::: {.r-stack}
+::: {data-id="box1" style="background: #2780e3; width: 350px; height: 350px; border-radius: 200px;"}
+:::
+
+::: {data-id="box2" style="background: #3fb618; width: 250px; height: 250px; border-radius: 200px;"}
+:::
+
+::: {data-id="box3" style="background: #e83e8c; width: 150px; height: 150px; border-radius: 200px;"}
+:::
+:::

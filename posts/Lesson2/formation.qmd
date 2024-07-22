@@ -1,0 +1,125 @@
+---
+title: "Formation of Partial Differential Equations"
+author: "Siju Swamy"
+date: "2024-07-22"
+categories: [news,analysis]
+image: chem1.png
+---
+
+## Introduction to Partial Differential Equations (PDEs)
+
+Partial Differential Equations (PDEs) are equations that involve multiple independent variables, an unknown function, and partial derivatives of that function. They are used to formulate problems involving functions of several variables and are fundamental in describing various physical phenomena such as heat conduction, wave propagation, and fluid dynamics.
+
+### Key Concepts
+
+1. **Formation of PDEs**: A PDE can be formed by eliminating arbitrary constants or functions from an equation involving multiple variables. For example, from $F(x, y, z, a, b) = 0$, eliminate $a$ and $b$ to obtain a PDE in $x, y, z$.
+
+2. **Order of a PDE**: The order is determined by the highest order of the partial derivative present in the equation. For instance, $u_{xx} + u_{yy} = 0$ is a second-order PDE because the highest derivative is second order.
+
+3. **Linear vs Nonlinear PDEs**: Linear PDEs involve linear terms of the unknown function and its derivatives, while nonlinear PDEs involve nonlinear terms. For example, $u_t = \alpha u_{xx}$ is a linear PDE, and $u_t + u u_x = \nu u_{xx}$ is a nonlinear PDE.
+
+4. **Homogeneous vs Inhomogeneous PDEs**: Homogeneous PDEs have no terms independent of the unknown function and its derivatives, whereas inhomogeneous PDEs have additional terms. For instance, $u_{xx} + u_{yy} = 0$ is homogeneous, while $u_{xx} + u_{yy} = f(x, y)$ is inhomogeneous.
+
+### Formation of PDEs
+
+There are three approaches to form PDE from a static equation.
+
+1. Elimination of arbitrary constants
+2. Elimination of arbitrary functions
+3. Elimination of arbitrary function $\phi$ from the relation $\phi(u,v)=0$, where $u$ and $v$ are functions of $x$ ,$y$ and $z$.
+
+## Method-1 {.smaller}
+::: {.callout-note}
+## Algorithm (Method of Elimination of arbitrary constant)
+- **Step 1:** Differentiate partially given static equation.
+- **Step 2:** Eliminate the arbitrary constants using the expression for partial differentials.
+:::
+### Example
+
+1. Form a PDE from $z = ax + by$.
+
+  *Solution:*
+
+- Step 1: Find the partial derivatives:
+   $$
+   \frac{\partial z}{\partial x} = a, \quad \frac{\partial z}{\partial y} = b
+   $$
+-  Step 2: Eliminating the arbitrary constant:
+   the required PDE is:
+   \begin{align*}
+   z&=\left(\dfrac{\partial z}{\partial x}\right) x+\left(\dfrac{\partial z}{\partial y}\right) y\\
+   \therefore z&=px+qy
+   \end{align*}
+2. Form a PDE from $z=ax+by+ab$.
+
+*Solution:*
+
+- Step 1: Find the partial derivatives:
+   $$
+   \frac{\partial z}{\partial x} = a, \quad \frac{\partial z}{\partial y} = b
+   $$
+-  Step 2: Eliminating the arbitrary constant:
+   the required PDE is:
+   \begin{align*}
+   z&=\left(\dfrac{\partial z}{\partial x}\right) x+\left(\dfrac{\partial z}{\partial y}\right) y+\left(\dfrac{\partial z}{\partial x}\right)\cdot \left(\dfrac{\partial z}{\partial y}\right)\\
+   \therefore z&=px+qy+pq
+   \end{align*}
+
+3. Form a PDE from $x^2+y^2+(z-c)^2=a^2$.
+
+*Solution:*
+
+- Step 1: Find the partial derivatives:
+
+
+
+2. **By Elimination of Arbitrary Functions**:
+   Consider $F(x + y, z - y) = 0$. Let $u = x + y$ and $v = z - y$:
+   $$
+   \frac{\partial u}{\partial x} = 1, \quad \frac{\partial u}{\partial y} = 1, \quad \frac{\partial v}{\partial y} = -1
+   $$
+   Then the PDE is:
+   $$
+   \frac{\partial z}{\partial x} + \frac{\partial z}{\partial y} = 1
+   $$
+
+### Examples of Static PDEs
+
+1. **Laplace's Equation**:
+   $$
+   u_{xx} + u_{yy} = 0
+   $$
+   This equation describes a steady-state distribution, such as temperature in a region where heat conduction has reached equilibrium.
+
+2. **Poisson's Equation**:
+   $$
+   u_{xx} + u_{yy} = f(x, y)
+   $$
+   This is a generalization of Laplace's equation with a source term $f(x, y)$, often used in electrostatics and mechanical engineering.
+
+3. **Steady-State Heat Equation**:
+   $$\nabla^2 T = 0$$
+   In Cartesian coordinates, this becomes:
+   $$\frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} + \frac{\partial^2 T}{\partial z^2} = 0 $$
+   Describing the steady-state temperature distribution in a solid.
+
+These examples illustrate the formation and classification of PDEs, providing a foundation for understanding more complex dynamic systems described by PDEs.
+
+## Summary
+
+::: {.callout-note}
+## Definition
+A differential equation which involve partial derivatives is called Partial Differential Equation (PDE). The general form of an $m$ th order PDE is given by:
+
+$$F(z,x,y,\frac{\partial^r z}{\partial x^i\partial y^n};1\leq r\leq m,0
+\leq (i,n)\leq m,i+n=r)=0$$
+:::
+
+::: {.callout-tip}
+### Order and Degree of PDE
+
+**Order:** The order of the highest order partial derivative present in the PDE is called its order.
+
+**Degree:** The power of the highest order partial derivative present in the PDE is called its degree.
+
+:::
