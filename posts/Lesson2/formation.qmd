@@ -130,7 +130,7 @@ $$4z = p^2 + q^2$$
 
 ## Advanced problems
 
->1. Find the partial differential equation epresenting the family of spheres whose centers lies on $z-$ axis.
+>1. Find the partial differential equation representing the family of spheres whose centers lies on $z-$ axis.
 
 **Solution:**
 
@@ -328,7 +328,7 @@ where $p = \frac{\partial z}{\partial x}$ and $q = \frac{\partial z}{\partial y}
 
 **Solution:**
 
-Step 1: Equation of the Surface**
+Step 1: Equation of the Surface
 
 Consider the surface equation:
 
