@@ -2,7 +2,7 @@
 title: "Formation of Partial Differential Equations"
 author: "Siju Swamy"
 date: "2024-07-22"
-categories: [news,analysis]
+categories: [session note]
 image: chem1.png
 ---
 ## Introduction to Partial Differential Equations (PDEs)
@@ -128,54 +128,399 @@ $$z = \frac{p^2}{4} + \frac{q^2}{4}$$
 
 $$4z = p^2 + q^2$$
 
+## Advanced problems
 
-2. **By Elimination of Arbitrary Functions**:
-   Consider $F(x + y, z - y) = 0$. Let $u = x + y$ and $v = z - y$:
-   $$
-   \frac{\partial u}{\partial x} = 1, \quad \frac{\partial u}{\partial y} = 1, \quad \frac{\partial v}{\partial y} = -1
-   $$
-   Then the PDE is:
-   $$
-   \frac{\partial z}{\partial x} + \frac{\partial z}{\partial y} = 1
-   $$
+>1. Find the partial differential equation epresenting the family of spheres whose centers lies on $z-$ axis.
 
-### Examples of Static PDEs
+**Solution:**
 
-1. **Laplace's Equation**:
-   $$
-   u_{xx} + u_{yy} = 0
-   $$
-   This equation describes a steady-state distribution, such as temperature in a region where heat conduction has reached equilibrium.
+ Step 1. Equation of the Sphere
 
-2. **Poisson's Equation**:
-   $$
-   u_{xx} + u_{yy} = f(x, y)
-   $$
-   This is a generalization of Laplace's equation with a source term $f(x, y)$, often used in electrostatics and mechanical engineering.
+Consider a sphere with center $(0,0,c)$ and radius $R$. The equation of the sphere is:
 
-3. **Steady-State Heat Equation**:
-   $$\nabla^2 T = 0$$
-   In Cartesian coordinates, this becomes:
-   $$\frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} + \frac{\partial^2 T}{\partial z^2} = 0 $$
-   Describing the steady-state temperature distribution in a solid.
+$$x^2 + y^2 + (z - c)^2 = R^2$$
 
-These examples illustrate the formation and classification of PDEs, providing a foundation for understanding more complex dynamic systems described by PDEs.
+Step 2. Differentiate with Respect to $x$ and $y$
 
-## Summary
+Differentiate with respect to $x$:
 
-::: {.callout-note}
-## Definition
-A differential equation which involve partial derivatives is called Partial Differential Equation (PDE). The general form of an $m$ th order PDE is given by:
+$$
+\frac{\partial}{\partial x}[x^2 + y^2 + (z - c)^2] = \frac{\partial}{\partial x}[R^2]
+$$
 
-$$F(z,x,y,\frac{\partial^r z}{\partial x^i\partial y^n};1\leq r\leq m,0
-\leq (i,n)\leq m,i+n=r)=0$$
-:::
+$$
+2x + 2(z - c) \frac{\partial z}{\partial x} = 0
+$$
 
-::: {.callout-tip}
-### Order and Degree of PDE
+$$
+x + (z - c)p = 0
+$$
 
-**Order:** The order of the highest order partial derivative present in the PDE is called its order.
+where $p = \frac{\partial z}{\partial x}$.
 
-**Degree:** The power of the highest order partial derivative present in the PDE is called its degree.
+Differentiate with respect to $y$:
 
-:::
+$$
+\frac{\partial}{\partial y}[x^2 + y^2 + (z - c)^2] = \frac{\partial}{\partial y}[R^2]
+$$
+
+$$
+2y + 2(z - c) \frac{\partial z}{\partial y} = 0
+$$
+
+$$
+y + (z - c)q = 0
+$$
+
+where $q = \frac{\partial z}{\partial y}$.
+
+Step 3. Eliminate the Arbitrary Constant $c$
+
+From the equations:
+
+$$
+x + (z - c)p = 0
+$$
+
+$$
+y + (z - c)q = 0
+$$
+
+Solving for $c$:
+
+$$
+z - c = -\frac{x}{p}
+$$
+
+$$
+z - c = -\frac{y}{q}
+$$
+
+Equate the two expressions for $z - c$:
+
+$$
+-\frac{x}{p} = -\frac{y}{q}
+$$
+
+$$
+\frac{x}{p} = \frac{y}{q}
+$$
+
+Thus:
+
+$$
+xq = yp
+$$
+
+Step 4. Final PDE
+
+The partial differential equation representing the family of spheres whose centers lie on the $z$-axis is:
+
+$$
+xq - yp = 0
+$$
+
+where $p = \frac{\partial z}{\partial x}$ and $q = \frac{\partial z}{\partial y}$.
+
+2. Find the differential equation of all spheres of fixed radius having their centers in the xy-plane.
+
+**Solution:**
+
+Step 1: Equation of the Sphere
+
+Consider a sphere with center $(a, b, 0)$ and radius $R$. The equation of the sphere is:
+
+$$
+(x - a)^2 + (y - b)^2 + z^2 = R^2
+$$
+
+Step 2: Differentiate with Respect to $x$ and $y$
+
+Differentiate with respect to $x$:
+
+$$
+\frac{\partial}{\partial x}[(x - a)^2 + (y - b)^2 + z^2] = \frac{\partial}{\partial x}[R^2]
+$$
+
+$$
+2(x - a) + 2z \frac{\partial z}{\partial x} = 0
+$$
+
+$$
+x - a + z p = 0
+$$
+
+where $p = \frac{\partial z}{\partial x}$.
+
+Differentiate with respect to $y$:
+
+$$
+\frac{\partial}{\partial y}[(x - a)^2 + (y - b)^2 + z^2] = \frac{\partial}{\partial y}[R^2]
+$$
+
+$$
+2(y - b) + 2z \frac{\partial z}{\partial y} = 0
+$$
+
+$$
+y - b + z q = 0
+$$
+
+where $q = \frac{\partial z}{\partial y}$.
+
+Step 3: Eliminate the Arbitrary Constants $a$ and $b$
+
+From the equations:
+
+$$
+x - a + z p = 0
+$$
+
+$$
+y - b + z q = 0
+$$
+
+Solve for $a$ and $b$:
+
+$$
+a = x + z p
+$$
+
+$$
+b = y + z q
+$$
+
+Step 4: Substitute $a$ and $b$ Back into the Sphere Equation
+
+Substitute $a$ and $b$ into the original sphere equation:
+
+$$
+(x - (x + z p))^2 + (y - (y + z q))^2 + z^2 = R^2
+$$
+
+Simplify:
+
+$$
+(-z p)^2 + (-z q)^2 + z^2 = R^2
+$$
+
+$$
+z^2 p^2 + z^2 q^2 + z^2 = R^2
+$$
+
+Factor out $z^2$:
+
+$$
+z^2 (p^2 + q^2 + 1) = R^2
+$$
+
+Final PDE:
+
+The partial differential equation representing all spheres of fixed radius with centers in the $xy$-plane is:
+
+$$
+z^2 (p^2 + q^2 + 1) = R^2
+$$
+
+where $p = \frac{\partial z}{\partial x}$ and $q = \frac{\partial z}{\partial y}$.
+
+>3. Find the partial differential equation of $(x-a)^2+(y-b)^2=z^2\cot^2\alpha$ by eliminating arbitrary constants.
+
+**Solution:**
+
+Step 1: Equation of the Surface**
+
+Consider the surface equation:
+
+$$
+(x - a)^2 + (y - b)^2 = z^2 \cot^2 \alpha
+$$
+
+where $\alpha$ is a constant angle.
+
+Step 2: Differentiate with Respect to $x$ and $y$**
+
+Differentiate with respect to $x$:
+
+$$
+\frac{\partial}{\partial x}[(x - a)^2 + (y - b)^2] = \frac{\partial}{\partial x}[z^2 \cot^2 \alpha]
+$$
+
+$$
+2(x - a) + 0 = 2z \cot^2 \alpha \frac{\partial z}{\partial x}
+$$
+
+$$
+x - a = z \cot^2 \alpha \frac{\partial z}{\partial x}
+$$
+
+Let $p = \frac{\partial z}{\partial x}$, then:
+
+$$
+x - a = z \cot^2 \alpha \cdot p
+$$
+
+Differentiate with respect to $y$:
+
+$$
+\frac{\partial}{\partial y}[(x - a)^2 + (y - b)^2] = \frac{\partial}{\partial y}[z^2 \cot^2 \alpha]
+$$
+
+$$
+0 + 2(y - b) = 2z \cot^2 \alpha \frac{\partial z}{\partial y}
+$$
+
+$$
+y - b = z \cot^2 \alpha \frac{\partial z}{\partial y}
+$$
+
+Let $q = \frac{\partial z}{\partial y}$, then:
+
+$$
+y - b = z \cot^2 \alpha \cdot q
+$$
+
+Step 3: Eliminate the Arbitrary Constants $a$ and $b$
+
+From the equations:
+
+$$
+x - a = z \cot^2 \alpha \cdot p
+$$
+
+$$
+y - b = z \cot^2 \alpha \cdot q
+$$
+
+Solve for $a$ and $b$:
+
+$$
+a = x - z \cot^2 \alpha \cdot p
+$$
+
+$$
+b = y - z \cot^2 \alpha \cdot q
+$$
+
+Step 4: Substitute $a$ and $b$ Back into the Surface Equation
+
+Substitute $a$ and $b$ into the original surface equation:
+
+$$
+(x - (x - z \cot^2 \alpha \cdot p))^2 + (y - (y - z \cot^2 \alpha \cdot q))^2 = z^2 \cot^2 \alpha
+$$
+
+Simplify:
+
+$$
+(z \cot^2 \alpha \cdot p)^2 + (z \cot^2 \alpha \cdot q)^2 = z^2 \cot^2 \alpha
+$$
+
+$$
+z^2 \cot^4 \alpha \cdot p^2 + z^2 \cot^4 \alpha \cdot q^2 = z^2 \cot^2 \alpha
+$$
+
+Factor out $z^2 \cot^4 \alpha$:
+
+$$
+z^2 \cot^4 \alpha (p^2 + q^2) = z^2 \cot^2 \alpha
+$$
+
+Divide through by $z^2 \cot^2 \alpha$:
+
+$$
+\cot^2 \alpha (p^2 + q^2) = 1
+$$
+
+Final PDE:
+
+The partial differential equation representing the surface is:
+
+$$
+\cot^2 \alpha (p^2 + q^2) = 1
+$$
+
+where $p = \frac{\partial z}{\partial x}$ and $q = \frac{\partial z}{\partial y}$.
+
+>4. Find the partial differential equation of $z=ae^{bx}\sin(by)$ by eliminating arbitrary constants $a$ and $b$.
+
+**Solution:**
+
+Step 1: Function Definition
+
+Consider the function:
+
+$$
+z = ae^{bx} \sin(by)
+$$
+
+where $a$ and $b$ are arbitrary constants.
+
+Step 2: Find the Partial Derivatives
+
+First partial derivative with respect to $x$:
+
+$$
+\frac{\partial z}{\partial x} = \frac{\partial}{\partial x}[ae^{bx} \sin(by)]
+$$
+
+Using the product rule:
+
+$$
+\frac{\partial z}{\partial x} = a b e^{bx} \sin(by)
+$$
+
+Let $p = \frac{\partial z}{\partial x}$:
+
+$$
+p = a b e^{bx} \sin(by)
+$$
+
+First partial derivative with respect to $y$:
+
+$$
+\frac{\partial z}{\partial y} = \frac{\partial}{\partial y}[ae^{bx} \sin(by)]
+$$
+
+Using the product rule:
+
+$$
+\frac{\partial z}{\partial y} = a e^{bx} \cdot b \cos(by)
+$$
+
+Let $q = \frac{\partial z}{\partial y}$:
+
+$$
+q = a b e^{bx} \cos(by)
+$$
+
+Step 3: Eliminate the Arbitrary Constant $b$
+
+From the expressions for $p$ and $q$:
+
+$$
+p = a b e^{bx} \sin(by)
+$$
+
+or $$p=bz$$
+$$
+q = a b e^{bx} \cos(by)
+$$
+
+Divide $p$ by $q$:
+
+$$
+\frac{p}{q} = \frac{a b e^{bx} \sin(by)}{a b e^{bx} \cos(by)}
+$$
+
+$$
+\frac{p}{q} = \frac{\sin(by)}{\cos(by)}
+$$
+
+$$
+\frac{p}{q} = \tan(by)
+$$
+ Using $b=\frac{p}{z}$, we get
+
+ $$p=q\tan\left(\frac{py}{z}\right)$$
+

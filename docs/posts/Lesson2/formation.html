@@ -146,8 +146,7 @@ window.Quarto = {
     <div class="quarto-title column-body">
       <h1 class="title">Formation of Partial Differential Equations</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
-                <div class="quarto-category">analysis</div>
+                <div class="quarto-category">session note</div>
               </div>
                   </div>
   </div>
@@ -297,59 +296,281 @@ y&amp;=(z-c)\dfrac{\partial z}{\partial y}
 <p><span class="math display">\[z = \left(\frac{p}{2}\right)^2 + \left(\frac{q}{2}\right)^2\]</span></p>
 <p><span class="math display">\[z = \frac{p^2}{4} + \frac{q^2}{4}\]</span></p>
 <p><span class="math display">\[4z = p^2 + q^2\]</span></p>
-<ol start="2" type="1">
-<li><strong>By Elimination of Arbitrary Functions</strong>: Consider <span class="math inline">\(F(x + y, z - y) = 0\)</span>. Let <span class="math inline">\(u = x + y\)</span> and <span class="math inline">\(v = z - y\)</span>: <span class="math display">\[
-\frac{\partial u}{\partial x} = 1, \quad \frac{\partial u}{\partial y} = 1, \quad \frac{\partial v}{\partial y} = -1
-\]</span> Then the PDE is: <span class="math display">\[
-\frac{\partial z}{\partial x} + \frac{\partial z}{\partial y} = 1
-\]</span></li>
-</ol>
 </section>
-<section id="examples-of-static-pdes" class="level3">
-<h3 class="anchored" data-anchor-id="examples-of-static-pdes">Examples of Static PDEs</h3>
+</section>
+<section id="advanced-problems" class="level2">
+<h2 class="anchored" data-anchor-id="advanced-problems">Advanced problems</h2>
+<blockquote class="blockquote">
 <ol type="1">
-<li><p><strong>Laplace’s Equation</strong>: <span class="math display">\[
-u_{xx} + u_{yy} = 0
-\]</span> This equation describes a steady-state distribution, such as temperature in a region where heat conduction has reached equilibrium.</p></li>
-<li><p><strong>Poisson’s Equation</strong>: <span class="math display">\[
-u_{xx} + u_{yy} = f(x, y)
-\]</span> This is a generalization of Laplace’s equation with a source term <span class="math inline">\(f(x, y)\)</span>, often used in electrostatics and mechanical engineering.</p></li>
-<li><p><strong>Steady-State Heat Equation</strong>: <span class="math display">\[\nabla^2 T = 0\]</span> In Cartesian coordinates, this becomes: <span class="math display">\[\frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} + \frac{\partial^2 T}{\partial z^2} = 0 \]</span> Describing the steady-state temperature distribution in a solid.</p></li>
+<li>Find the partial differential equation epresenting the family of spheres whose centers lies on <span class="math inline">\(z-\)</span> axis.</li>
 </ol>
-<p>These examples illustrate the formation and classification of PDEs, providing a foundation for understanding more complex dynamic systems described by PDEs.</p>
-</section>
-</section>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Definition
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>A differential equation which involve partial derivatives is called Partial Differential Equation (PDE). The general form of an <span class="math inline">\(m\)</span> th order PDE is given by:</p>
-<p><span class="math display">\[F(z,x,y,\frac{\partial^r z}{\partial x^i\partial y^n};1\leq r\leq m,0
-\leq (i,n)\leq m,i+n=r)=0\]</span></p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Order and Degree of PDE
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Order:</strong> The order of the highest order partial derivative present in the PDE is called its order.</p>
-<p><strong>Degree:</strong> The power of the highest order partial derivative present in the PDE is called its degree.</p>
-</div>
-</div>
+</blockquote>
+<p><strong>Solution:</strong></p>
+<p>Step 1. Equation of the Sphere</p>
+<p>Consider a sphere with center <span class="math inline">\((0,0,c)\)</span> and radius <span class="math inline">\(R\)</span>. The equation of the sphere is:</p>
+<p><span class="math display">\[x^2 + y^2 + (z - c)^2 = R^2\]</span></p>
+<p>Step 2. Differentiate with Respect to <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span></p>
+<p>Differentiate with respect to <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial}{\partial x}[x^2 + y^2 + (z - c)^2] = \frac{\partial}{\partial x}[R^2]
+\]</span></p>
+<p><span class="math display">\[
+2x + 2(z - c) \frac{\partial z}{\partial x} = 0
+\]</span></p>
+<p><span class="math display">\[
+x + (z - c)p = 0
+\]</span></p>
+<p>where <span class="math inline">\(p = \frac{\partial z}{\partial x}\)</span>.</p>
+<p>Differentiate with respect to <span class="math inline">\(y\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial}{\partial y}[x^2 + y^2 + (z - c)^2] = \frac{\partial}{\partial y}[R^2]
+\]</span></p>
+<p><span class="math display">\[
+2y + 2(z - c) \frac{\partial z}{\partial y} = 0
+\]</span></p>
+<p><span class="math display">\[
+y + (z - c)q = 0
+\]</span></p>
+<p>where <span class="math inline">\(q = \frac{\partial z}{\partial y}\)</span>.</p>
+<p>Step 3. Eliminate the Arbitrary Constant <span class="math inline">\(c\)</span></p>
+<p>From the equations:</p>
+<p><span class="math display">\[
+x + (z - c)p = 0
+\]</span></p>
+<p><span class="math display">\[
+y + (z - c)q = 0
+\]</span></p>
+<p>Solving for <span class="math inline">\(c\)</span>:</p>
+<p><span class="math display">\[
+z - c = -\frac{x}{p}
+\]</span></p>
+<p><span class="math display">\[
+z - c = -\frac{y}{q}
+\]</span></p>
+<p>Equate the two expressions for <span class="math inline">\(z - c\)</span>:</p>
+<p><span class="math display">\[
+-\frac{x}{p} = -\frac{y}{q}
+\]</span></p>
+<p><span class="math display">\[
+\frac{x}{p} = \frac{y}{q}
+\]</span></p>
+<p>Thus:</p>
+<p><span class="math display">\[
+xq = yp
+\]</span></p>
+<p>Step 4. Final PDE</p>
+<p>The partial differential equation representing the family of spheres whose centers lie on the <span class="math inline">\(z\)</span>-axis is:</p>
+<p><span class="math display">\[
+xq - yp = 0
+\]</span></p>
+<p>where <span class="math inline">\(p = \frac{\partial z}{\partial x}\)</span> and <span class="math inline">\(q = \frac{\partial z}{\partial y}\)</span>.</p>
+<ol start="2" type="1">
+<li>Find the differential equation of all spheres of fixed radius having their centers in the xy-plane.</li>
+</ol>
+<p><strong>Solution:</strong></p>
+<p>Step 1: Equation of the Sphere</p>
+<p>Consider a sphere with center <span class="math inline">\((a, b, 0)\)</span> and radius <span class="math inline">\(R\)</span>. The equation of the sphere is:</p>
+<p><span class="math display">\[
+(x - a)^2 + (y - b)^2 + z^2 = R^2
+\]</span></p>
+<p>Step 2: Differentiate with Respect to <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span></p>
+<p>Differentiate with respect to <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial}{\partial x}[(x - a)^2 + (y - b)^2 + z^2] = \frac{\partial}{\partial x}[R^2]
+\]</span></p>
+<p><span class="math display">\[
+2(x - a) + 2z \frac{\partial z}{\partial x} = 0
+\]</span></p>
+<p><span class="math display">\[
+x - a + z p = 0
+\]</span></p>
+<p>where <span class="math inline">\(p = \frac{\partial z}{\partial x}\)</span>.</p>
+<p>Differentiate with respect to <span class="math inline">\(y\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial}{\partial y}[(x - a)^2 + (y - b)^2 + z^2] = \frac{\partial}{\partial y}[R^2]
+\]</span></p>
+<p><span class="math display">\[
+2(y - b) + 2z \frac{\partial z}{\partial y} = 0
+\]</span></p>
+<p><span class="math display">\[
+y - b + z q = 0
+\]</span></p>
+<p>where <span class="math inline">\(q = \frac{\partial z}{\partial y}\)</span>.</p>
+<p>Step 3: Eliminate the Arbitrary Constants <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span></p>
+<p>From the equations:</p>
+<p><span class="math display">\[
+x - a + z p = 0
+\]</span></p>
+<p><span class="math display">\[
+y - b + z q = 0
+\]</span></p>
+<p>Solve for <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>:</p>
+<p><span class="math display">\[
+a = x + z p
+\]</span></p>
+<p><span class="math display">\[
+b = y + z q
+\]</span></p>
+<p>Step 4: Substitute <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> Back into the Sphere Equation</p>
+<p>Substitute <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> into the original sphere equation:</p>
+<p><span class="math display">\[
+(x - (x + z p))^2 + (y - (y + z q))^2 + z^2 = R^2
+\]</span></p>
+<p>Simplify:</p>
+<p><span class="math display">\[
+(-z p)^2 + (-z q)^2 + z^2 = R^2
+\]</span></p>
+<p><span class="math display">\[
+z^2 p^2 + z^2 q^2 + z^2 = R^2
+\]</span></p>
+<p>Factor out <span class="math inline">\(z^2\)</span>:</p>
+<p><span class="math display">\[
+z^2 (p^2 + q^2 + 1) = R^2
+\]</span></p>
+<p>Final PDE:</p>
+<p>The partial differential equation representing all spheres of fixed radius with centers in the <span class="math inline">\(xy\)</span>-plane is:</p>
+<p><span class="math display">\[
+z^2 (p^2 + q^2 + 1) = R^2
+\]</span></p>
+<p>where <span class="math inline">\(p = \frac{\partial z}{\partial x}\)</span> and <span class="math inline">\(q = \frac{\partial z}{\partial y}\)</span>.</p>
+<blockquote class="blockquote">
+<ol start="3" type="1">
+<li>Find the partial differential equation of <span class="math inline">\((x-a)^2+(y-b)^2=z^2\cot^2\alpha\)</span> by eliminating arbitrary constants.</li>
+</ol>
+</blockquote>
+<p><strong>Solution:</strong></p>
+<p>Step 1: Equation of the Surface**</p>
+<p>Consider the surface equation:</p>
+<p><span class="math display">\[
+(x - a)^2 + (y - b)^2 = z^2 \cot^2 \alpha
+\]</span></p>
+<p>where <span class="math inline">\(\alpha\)</span> is a constant angle.</p>
+<p>Step 2: Differentiate with Respect to <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>**</p>
+<p>Differentiate with respect to <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial}{\partial x}[(x - a)^2 + (y - b)^2] = \frac{\partial}{\partial x}[z^2 \cot^2 \alpha]
+\]</span></p>
+<p><span class="math display">\[
+2(x - a) + 0 = 2z \cot^2 \alpha \frac{\partial z}{\partial x}
+\]</span></p>
+<p><span class="math display">\[
+x - a = z \cot^2 \alpha \frac{\partial z}{\partial x}
+\]</span></p>
+<p>Let <span class="math inline">\(p = \frac{\partial z}{\partial x}\)</span>, then:</p>
+<p><span class="math display">\[
+x - a = z \cot^2 \alpha \cdot p
+\]</span></p>
+<p>Differentiate with respect to <span class="math inline">\(y\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial}{\partial y}[(x - a)^2 + (y - b)^2] = \frac{\partial}{\partial y}[z^2 \cot^2 \alpha]
+\]</span></p>
+<p><span class="math display">\[
+0 + 2(y - b) = 2z \cot^2 \alpha \frac{\partial z}{\partial y}
+\]</span></p>
+<p><span class="math display">\[
+y - b = z \cot^2 \alpha \frac{\partial z}{\partial y}
+\]</span></p>
+<p>Let <span class="math inline">\(q = \frac{\partial z}{\partial y}\)</span>, then:</p>
+<p><span class="math display">\[
+y - b = z \cot^2 \alpha \cdot q
+\]</span></p>
+<p>Step 3: Eliminate the Arbitrary Constants <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span></p>
+<p>From the equations:</p>
+<p><span class="math display">\[
+x - a = z \cot^2 \alpha \cdot p
+\]</span></p>
+<p><span class="math display">\[
+y - b = z \cot^2 \alpha \cdot q
+\]</span></p>
+<p>Solve for <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>:</p>
+<p><span class="math display">\[
+a = x - z \cot^2 \alpha \cdot p
+\]</span></p>
+<p><span class="math display">\[
+b = y - z \cot^2 \alpha \cdot q
+\]</span></p>
+<p>Step 4: Substitute <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> Back into the Surface Equation</p>
+<p>Substitute <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> into the original surface equation:</p>
+<p><span class="math display">\[
+(x - (x - z \cot^2 \alpha \cdot p))^2 + (y - (y - z \cot^2 \alpha \cdot q))^2 = z^2 \cot^2 \alpha
+\]</span></p>
+<p>Simplify:</p>
+<p><span class="math display">\[
+(z \cot^2 \alpha \cdot p)^2 + (z \cot^2 \alpha \cdot q)^2 = z^2 \cot^2 \alpha
+\]</span></p>
+<p><span class="math display">\[
+z^2 \cot^4 \alpha \cdot p^2 + z^2 \cot^4 \alpha \cdot q^2 = z^2 \cot^2 \alpha
+\]</span></p>
+<p>Factor out <span class="math inline">\(z^2 \cot^4 \alpha\)</span>:</p>
+<p><span class="math display">\[
+z^2 \cot^4 \alpha (p^2 + q^2) = z^2 \cot^2 \alpha
+\]</span></p>
+<p>Divide through by <span class="math inline">\(z^2 \cot^2 \alpha\)</span>:</p>
+<p><span class="math display">\[
+\cot^2 \alpha (p^2 + q^2) = 1
+\]</span></p>
+<p>Final PDE:</p>
+<p>The partial differential equation representing the surface is:</p>
+<p><span class="math display">\[
+\cot^2 \alpha (p^2 + q^2) = 1
+\]</span></p>
+<p>where <span class="math inline">\(p = \frac{\partial z}{\partial x}\)</span> and <span class="math inline">\(q = \frac{\partial z}{\partial y}\)</span>.</p>
+<blockquote class="blockquote">
+<ol start="4" type="1">
+<li>Find the partial differential equation of <span class="math inline">\(z=ae^{bx}\sin(by)\)</span> by eliminating arbitrary constants <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>.</li>
+</ol>
+</blockquote>
+<p><strong>Solution:</strong></p>
+<p>Step 1: Function Definition</p>
+<p>Consider the function:</p>
+<p><span class="math display">\[
+z = ae^{bx} \sin(by)
+\]</span></p>
+<p>where <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are arbitrary constants.</p>
+<p>Step 2: Find the Partial Derivatives</p>
+<p>First partial derivative with respect to <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial z}{\partial x} = \frac{\partial}{\partial x}[ae^{bx} \sin(by)]
+\]</span></p>
+<p>Using the product rule:</p>
+<p><span class="math display">\[
+\frac{\partial z}{\partial x} = a b e^{bx} \sin(by)
+\]</span></p>
+<p>Let <span class="math inline">\(p = \frac{\partial z}{\partial x}\)</span>:</p>
+<p><span class="math display">\[
+p = a b e^{bx} \sin(by)
+\]</span></p>
+<p>First partial derivative with respect to <span class="math inline">\(y\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial z}{\partial y} = \frac{\partial}{\partial y}[ae^{bx} \sin(by)]
+\]</span></p>
+<p>Using the product rule:</p>
+<p><span class="math display">\[
+\frac{\partial z}{\partial y} = a e^{bx} \cdot b \cos(by)
+\]</span></p>
+<p>Let <span class="math inline">\(q = \frac{\partial z}{\partial y}\)</span>:</p>
+<p><span class="math display">\[
+q = a b e^{bx} \cos(by)
+\]</span></p>
+<p>Step 3: Eliminate the Arbitrary Constant <span class="math inline">\(b\)</span></p>
+<p>From the expressions for <span class="math inline">\(p\)</span> and <span class="math inline">\(q\)</span>:</p>
+<p><span class="math display">\[
+p = a b e^{bx} \sin(by)
+\]</span></p>
+<p>or <span class="math display">\[p=bz\]</span> <span class="math display">\[
+q = a b e^{bx} \cos(by)
+\]</span></p>
+<p>Divide <span class="math inline">\(p\)</span> by <span class="math inline">\(q\)</span>:</p>
+<p><span class="math display">\[
+\frac{p}{q} = \frac{a b e^{bx} \sin(by)}{a b e^{bx} \cos(by)}
+\]</span></p>
+<p><span class="math display">\[
+\frac{p}{q} = \frac{\sin(by)}{\cos(by)}
+\]</span></p>
+<p><span class="math display">\[
+\frac{p}{q} = \tan(by)
+\]</span> Using <span class="math inline">\(b=\frac{p}{z}\)</span>, we get</p>
+<p><span class="math display">\[p=q\tan\left(\frac{py}{z}\right)\]</span></p>
 
 
 </section>
