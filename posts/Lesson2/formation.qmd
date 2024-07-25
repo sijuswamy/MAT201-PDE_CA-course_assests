@@ -338,7 +338,7 @@ $$
 
 where $\alpha$ is a constant angle.
 
-Step 2: Differentiate with Respect to $x$ and $y$**
+Step 2: Differentiate with Respect to $x$ and $y$
 
 Differentiate with respect to $x$:
 
