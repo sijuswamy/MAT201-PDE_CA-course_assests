@@ -1,5 +1,5 @@
 ---
-title: "Formation of Partial Differential Equations"
+title: "Formation of Partial Differential Equations (Part-1)"
 author: "Siju Swamy"
 date: "2024-07-22"
 categories: [session note]
