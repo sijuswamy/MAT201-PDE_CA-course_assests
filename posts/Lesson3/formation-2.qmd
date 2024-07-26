@@ -9,9 +9,17 @@ image: chem1.png
 
 To form a partial differential equation (PDE) by eliminating an arbitrary function from a given equation, follow these steps:
 
+### Method-2 {.smaller}
+
+::: {.callout-note}
+## Algorithm (Method of Elimination of arbitrary function)
+- **Step 1:** Differentiate partially the given static equation.
+- **Step 2:** Eliminate the arbitrary function(s) and its derivables using the expression for partial differentials.
+:::
+
 >*Example 1:* Find the PDE of the equation $z = f(x, y)$. where $f(x, y)$ is an arbitrary function of $x$ and $y$.
 
-**SOlution:**
+**Solution:**
 
 Step 1: Differentiate with Respect to $x$ and $y$
 
