@@ -1,0 +1,104 @@
+---
+title: "Formation of Partial Differential Equations"
+author: "Siju Swamy"
+date: "2024-07-25"
+categories: [session note]
+image: chem1.png
+---
+## Formation of PDE by Elimination of Arbitrary Function
+
+To form a partial differential equation (PDE) by eliminating an arbitrary function from a given equation, follow these steps:
+
+>*Example 1:* Find the PDE of the equation $z = f(x, y)$. where $f(x, y)$ is an arbitrary function of $x$ and $y$.
+
+**SOlution:**
+
+Step 1: Differentiate with Respect to $x$ and $y$
+
+Differentiate the given equation with respect to $x$ and $y$ to form new equations involving the partial derivatives.
+
+Differentiate with respect to $x$:
+
+$$
+\frac{\partial z}{\partial x} = \frac{\partial f(x, y)}{\partial x}
+$$
+
+Let $p = \frac{\partial z}{\partial x}$:
+
+$$
+p = f_x(x, y)
+$$
+
+Differentiate with respect to $y$:
+
+$$
+\frac{\partial z}{\partial y} = \frac{\partial f(x, y)}{\partial y}
+$$
+
+Let $q = \frac{\partial z}{\partial y}$:
+
+$$
+q = f_y(x, y)
+$$
+
+Step 2: Form the PDE
+
+Divide the equations for $p$ and $q$:
+
+$$
+\frac{p}{q} = \frac{f_x(x, y)}{f_y(x, y)}
+$$
+
+Since $f(x, y)$ is arbitrary, $f_x(x, y)$ and $f_y(x, y)$ are just partial derivatives of the function. The relationship simplifies to:
+
+$$
+\frac{p}{q} = 1
+$$
+
+So, the PDE is:
+
+$$
+p = q
+$$
+
+>*Example 2:* Form a PDE from the general dependancy relationship, $z=yf\left(\frac{y}{x}\right)$ by eliminating the arbitrary function.
+
+**Solution:**
+
+Given static equation is $$z=yf\left(\frac{y}{x}\right)$$ {#eq-eqn-1}
+
+Differentiating (@eq-eqn-1) partially with respect to $x$, we get:
+
+$$\dfrac{\partial z}{\partial x}=yf'\left(\frac{y}{x}\right)\left(-\dfrac{y}{x^2}\right)$$  
+
+or $$f'\left(\frac{y}{x}\right)=-\frac{x^2}{y^2}p$$ {#eq-eqn-2}
+
+Differentiating (@eq-eqn-1) partially with respect to $x$, we get:
+
+$$\dfrac{\partial z}{\partial y}=yf'\left(\frac{y}{x}\right)\left(\dfrac{1}{x}\right)+f\left(\frac{y}{x}\right)$$ {#eq-eqn-3}
+
+Using (@eq-eqn-1), and (@eq-eqn-2) in (@eq-eqn-3), we get:
+
+\begin{align*}
+q&=\dfrac{y}{x}\times \left(\dfrac{x^2}{y^2}\right)p+\dfrac{z}{y}\\
+&=-\frac{x}{y}p+\frac{z}{y}\\
+\implies z&=px+qy
+\end{align*}
+
+>*Example 2:* Form a PDE from the equation $z=f(x^2-y^2)$, where $f$ is an arbitrary function.
+
+**Solution:**
+
+Given $$z=f(x^2-y^2)$$ {#eq-eqnp2}
+
+Differentiating (@eq-eqnp2) partially with respect to $x$ and $y$, we get:
+
+\begin{align}
+p&=f'(x^2-y^2)\times 2x \\ 
+q&=f'(x^2-y^2)\times -2y 
+\end{align}
+
+ $$\therefore \dfrac{p}{q}=-\frac{x}{y}\implies py+qx=0$$
+
+
+

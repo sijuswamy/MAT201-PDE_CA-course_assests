@@ -43,8 +43,9 @@ There are three approaches to form PDE from a static equation.
    $$
    \frac{\partial z}{\partial x} = a, \quad \frac{\partial z}{\partial y} = b
    $$
--  Step 2: Eliminating the arbitrary constant:
-   the required PDE is:
+-  Step 2: Eliminating the arbitrary constants:
+
+   The required PDE is:
    \begin{align*}
    z&=\left(\dfrac{\partial z}{\partial x}\right) x+\left(\dfrac{\partial z}{\partial y}\right) y\\
    \therefore z&=px+qy
