@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Siju Swamy">
+<meta name="dcterms.date" content="2024-07-25">
 
-<title>20MAT201-Partial Differential Equations and Complex Analysis</title>
+<title>20MAT201-Partial Differential Equations and Complex Analysis - Solution of Linear Partial Differential Equations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -128,17 +99,17 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">20MAT201-Partial Differential Equations and Complex Analysis</span>
     </a>
   </div>
@@ -149,7 +120,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -172,251 +143,186 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">20MAT201-Partial Differential Equations and Complex Analysis</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Solution of Linear Partial Differential Equations</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">session note</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Siju Swamy </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">July 25, 2024</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(3)</span></div><div class="category" data-category="session note">session note <span class="quarto-category-count">(3)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<section id="concept-of-solution-of-a-pde" class="level2">
+<h2 class="anchored" data-anchor-id="concept-of-solution-of-a-pde">Concept of Solution of a PDE</h2>
+<p>The solution of a Partial Differential Equation (PDE) involves finding a function <span class="math inline">\(u(x, y, z, \ldots)\)</span> that satisfies the given PDE within a specified domain. PDEs involve partial derivatives of an unknown function with respect to multiple variables. Solutions to PDEs can be classified based on their type and the methods used to solve them.</p>
+<section id="types-of-solutions" class="level4">
+<h4 class="anchored" data-anchor-id="types-of-solutions">Types of Solutions</h4>
+<ol type="1">
+<li><strong>General Solution</strong>: A solution containing all possible solutions of a PDE and includes arbitrary constants or functions.</li>
+<li><strong>Particular Solution</strong>: A specific solution derived from the general solution by choosing particular values for the arbitrary constants or functions.</li>
+<li><strong>Singular Solution</strong>: A solution not obtainable from the general solution by any choice of constants.</li>
+</ol>
+</section>
+<section id="classification-of-solution-methods" class="level3">
+<h3 class="anchored" data-anchor-id="classification-of-solution-methods">Classification of Solution Methods</h3>
+<section id="linear-pdes" class="level4">
+<h4 class="anchored" data-anchor-id="linear-pdes">Linear PDEs</h4>
+<p>A PDE is linear if it can be written in the form:</p>
+<p><span class="math display">\[a_{ij}(x, y, \ldots) \frac{\partial^2 u}{\partial x_i \partial x_j} + \sum_{i} b_i(x, y, \ldots) \frac{\partial u}{\partial x_i} + c(x, y, \ldots) u = f(x, y, \ldots)\]</span></p>
+<p>where <span class="math inline">\(a_{ij}\)</span>, <span class="math inline">\(b_i\)</span>, <span class="math inline">\(c\)</span>, and <span class="math inline">\(f\)</span> are given functions, and <span class="math inline">\(u\)</span> is the unknown function.</p>
+<p>For example <span class="math inline">\(z=px+qy\)</span>, <span class="math inline">\((x^2-y^2)p+(y^2-z^2)q=x(x^2-y^2)\)</span> are linear PDEs.</p>
+<p><strong>Solution Methods for Linear PDEs:</strong></p>
+<ol type="1">
+<li><p><strong>Method of Characteristics</strong>: Used for first-order PDEs, it involves reducing the PDE to a set of ordinary differential equations (ODEs) along characteristic curves.</p></li>
+<li><p><strong>Separation of Variables</strong>: Assumes that the solution can be written as a product of functions, each of which depends on a single coordinate. This method is often used for solving linear PDEs with boundary conditions.</p></li>
+<li><p><strong>Transform Methods</strong>: Includes methods like the Fourier Transform or Laplace Transform, which convert the PDE into an algebraic equation or an ODE that is easier to solve.</p></li>
+<li><p><strong>Green’s Functions</strong>: Used to solve inhomogeneous linear PDEs. The solution is expressed in terms of the Green’s function, which incorporates the effects of boundary conditions.</p></li>
+<li><p><strong>Numerical Methods</strong>: Includes finite difference, finite element, and finite volume methods. These methods approximate the solution using discrete grids and are useful for complex domains and boundary conditions.</p></li>
+</ol>
+</section>
+<section id="non-linear-pdes" class="level4">
+<h4 class="anchored" data-anchor-id="non-linear-pdes">Non-Linear PDEs</h4>
+<p>A PDE is non-linear if it involves non-linear terms of the unknown function or its derivatives.</p>
+<p>For example, <span class="math inline">\(pq=x^2-y^2\)</span>, <span class="math inline">\(rs=px+pq-z\)</span>. <strong>Solution Methods for Non-Linear PDEs:</strong></p>
+<ol type="1">
+<li><p><strong>Method of Characteristics</strong>: Also applicable to non-linear first-order PDEs, it involves finding characteristic curves along which the PDE reduces to an ODE.</p></li>
+<li><p><strong>Perturbation Methods</strong>: Used for PDEs that can be considered as small perturbations of simpler problems. Solutions are found as a series expansion.</p></li>
+<li><p><strong>Numerical Methods</strong>: Similar to linear PDEs but more complex due to non-linearity. Techniques include finite difference methods, finite element methods, and spectral methods adapted for non-linear cases.</p></li>
+<li><p><strong>Exact Solutions</strong>: In some cases, non-linear PDEs may be solvable exactly using methods such as the inverse scattering transform, method of similarity solutions, or using specific ansatzes.</p></li>
+<li><p><strong>Conservation Laws</strong>: For some non-linear PDEs, solutions can be derived using conservation laws and integral constraints that the solution must satisfy.</p></li>
+</ol>
+</section>
+<section id="lagrange-pde" class="level4">
+<h4 class="anchored" data-anchor-id="lagrange-pde">Lagrange PDE</h4>
+<p><strong>Concept</strong>:</p>
+<p>Lagrange PDEs are first-order PDEs and can be expressed in the general form:</p>
+<p><span class="math display">\[F(x, y, z, p, q) = 0\]</span></p>
+<p>where <span class="math inline">\(p = \frac{\partial z}{\partial x}\)</span> and <span class="math inline">\(q = \frac{\partial z}{\partial y}\)</span>. These equations are often solved using the method of characteristics. The most general form of a Lagrange PDE is <span class="math display">\[Pp+Qq=R\]</span></p>
+<p><strong>Theory Behind Characteristic Equation</strong>:</p>
+<p>To solve a Lagrange PDE, the characteristic equation is introduced. This equation simplifies the process of finding the general solution.</p>
+<p><strong>Characteristic Equation</strong>:</p>
+<p>For a Lagrange PDE <span class="math inline">\(F(x, y, z, p, q) = 0\)</span>, the characteristic equation is given by:</p>
+<p><span class="math display">\[\frac{dx}{P} = \frac{dy}{Q} = \frac{dz}{R}\]</span></p>
+<p>where: - <span class="math inline">\(F_p = \frac{\partial F}{\partial p}\)</span> - <span class="math inline">\(F_q = \frac{\partial F}{\partial q}\)</span> - <span class="math inline">\(F\)</span> is the original function.</p>
+<p><strong>Reasoning Behind Solving the Characteristic Equation</strong>:</p>
+<ol type="1">
+<li><strong>Simplification</strong>: The characteristic equation simplifies the PDE by reducing it to a system of ODEs along characteristic curves. This reduction makes it easier to solve the PDE.</li>
+<li><strong>Reduction to Simpler Form</strong>: The characteristic equation often transforms the PDE into simpler ODEs or integrable forms, facilitating the process of finding a solution.</li>
+<li><strong>Insight into Characteristics</strong>: Solving the characteristic equation provides insight into the nature of the characteristic curves along which the PDE can be integrated. This helps in constructing the general solution.</li>
+</ol>
+<p><strong>Example</strong>: Consider the Lagrange PDE:</p>
+<p><span class="math display">\[
+x \frac{\partial z}{\partial x} + y \frac{\partial z}{\partial y} = z
+\]</span></p>
+<p><strong>Steps to Solve Using Characteristic Equation</strong>:</p>
+<ol type="1">
+<li><p><strong>Set Up the Characteristic Equations</strong>:</p>
+<p>For this PDE, the characteristic equations are:</p>
+<p><span class="math display">\[\frac{dx}{x} = \frac{dy}{y} = \frac{dz}{z}\]</span></p></li>
+<li><p><strong>Solve Characteristic Equations (grouping method)</strong>:</p>
+<p>Consider the first two fractions in the characteristic equation: <span class="math display">\[\frac{dx}{x} = \frac{dy}{y}\]</span></p>
+<p>On integration we get:</p>
+<p><span class="math display">\[\begin{align*}
+\ln |x| &amp;= \ln |y|+\ln c_1\\
+\ln |x|-\ln|y|&amp;=\ln c_1\\
+\ln\left|\frac{x}{y}\right|&amp;=\ln c_1\\
+\implies \left|\frac{x}{y}\right|&amp;=c_1
+\end{align*}\]</span></p></li>
+</ol>
+<p>Now consider the last two fractions in the characteristic equation: <span class="math display">\[\frac{dy}{y} = \frac{dz}{z}\]</span></p>
+<p>On integration we get:</p>
+<p><span class="math display">\[\begin{align*}
+    \ln |y| &amp;= \ln |z|+\ln c_2\\
+    \ln |y|-\ln|z|&amp;=\ln c_2\\
+    \ln\left|\frac{y}{z}\right|&amp;=\ln c_2\\
+    \implies \left|\frac{y}{z}\right|&amp;=c_2
+\end{align*}\]</span></p>
+<p>Considering these two partial solutions, the general solution will be of the form:</p>
+<p><span class="math display">\[\phi\left(\frac{x}{y},\frac{y}{z}\right)=0\]</span></p>
+</section>
+</section>
+</section>
+<section id="algorithm-to-solve-the-lagrange-pde" class="level2">
+<h2 class="anchored" data-anchor-id="algorithm-to-solve-the-lagrange-pde">Algorithm to solve the Lagrange PDE</h2>
+<p>The first order PDE is of the form <span class="math inline">\(Pp+Qq=R\)</span> can be solved using the following algorithm:</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Algorithm
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Step 1:</strong> Write the Lagrange Auxiliary equation <span class="math inline">\(\frac{dx}{P}=\frac{dy}{Q}=\frac{dz}{R}\)</span></p>
+<p><strong>Step 2:</strong> By grouping or applying method of multipliers, form two pairs of fractions such that mere integration eliminate the differentials and form the solution sets <span class="math inline">\(u=c_1\)</span> and <span class="math inline">\(v=c_2\)</span>.</p>
+<p><strong>Step 3:</strong> Then the general solution is a function of these two functions <span class="math inline">\(u,v\)</span>. Thus the required solution is <span class="math display">\[\begin{equation*}
+\phi(u,v)=0
+\end{equation*}\]</span> or <span class="math display">\[\begin{equation*}
+u=\phi(v)
+\end{equation*}\]</span></p>
+</div>
+</div>
+<section id="summary" class="level3 smaller">
+<h3 class="smaller anchored" data-anchor-id="summary">Summary</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lagrange Method
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Lagrange PDEs</strong>: First-order PDEs that can be solved using the method of characteristics.</li>
+<li><strong>Characteristic Equation</strong>: Derived from the PDE and used to simplify the PDE into a set of ODEs. It represents the relationship between variables along the characteristic curves.</li>
+<li><strong>Reasoning</strong>: Solving the characteristic equation simplifies the original PDE, providing insights into the characteristics and facilitating the integration along characteristic curves.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
 
 
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="session note" data-listing-date-sort="1721845800000" data-listing-file-modified-sort="1722363710047" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="940">
-<div class="thumbnail">
-<p><a href="./posts/Lesson3/formation-2.html" class="no-external"></a></p><a href="./posts/Lesson3/formation-2.html" class="no-external">
-<p><img src="./posts/Lesson3/chem1.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/Lesson3/formation-2.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Lesson3/formation-2.html" class="no-external">Formation of Partial Differential Equations (Part-2)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Lesson3/formation-2.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('session note'); return false;">
-session note
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Lesson3/formation-2.html" class="no-external">To form a partial differential equation (PDE) by eliminating an arbitrary function from a given equation, follow these steps:</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Lesson3/formation-2.html" class="no-external">
-<div class="listing-date">
-Jul 25, 2024
-</div>
-<div class="listing-author">
-Siju Swamy
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="session note" data-listing-date-sort="1721845800000" data-listing-file-modified-sort="1722366607883" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="977">
-<div class="thumbnail">
-<p><a href="./posts/lesson4/index.html" class="no-external"></a></p><a href="./posts/lesson4/index.html" class="no-external">
-<p><img src="./posts/lesson4/chem1.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/lesson4/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/lesson4/index.html" class="no-external">Solution of Linear Partial Differential Equations</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/lesson4/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('session note'); return false;">
-session note
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/lesson4/index.html" class="no-external">The solution of a Partial Differential Equation (PDE) involves finding a function <span class="math inline">\(u(x, y, z, \ldots)\)</span> that satisfies the given PDE within a specified domain. PDEs involve…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/lesson4/index.html" class="no-external">
-<div class="listing-date">
-Jul 25, 2024
-</div>
-<div class="listing-author">
-Siju Swamy
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="session note" data-listing-date-sort="1721586600000" data-listing-file-modified-sort="1722008236162" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1503">
-<div class="thumbnail">
-<p><a href="./posts/Lesson2/formation.html" class="no-external"></a></p><a href="./posts/Lesson2/formation.html" class="no-external">
-<p><img src="./posts/Lesson2/chem1.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/Lesson2/formation.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Lesson2/formation.html" class="no-external">Formation of Partial Differential Equations (Part-1)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Lesson2/formation.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('session note'); return false;">
-session note
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Lesson2/formation.html" class="no-external">Partial Differential Equations (PDEs) are equations that involve multiple independent variables, an unknown function, and partial derivatives of that function. They are used…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Lesson2/formation.html" class="no-external">
-<div class="listing-date">
-Jul 22, 2024
-</div>
-<div class="listing-author">
-Siju Swamy
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="news,analysis" data-listing-date-sort="1721500200000" data-listing-file-modified-sort="1721587633221" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1016">
-<div class="thumbnail">
-<p><a href="./posts/Lesson1/index.html" class="no-external"></a></p><a href="./posts/Lesson1/index.html" class="no-external">
-<p><img src="./posts/Lesson1/chem1.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/Lesson1/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Lesson1/index.html" class="no-external">Partial Differential Equation and Dynamic Systems</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Lesson1/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Lesson1/index.html" class="no-external">Mathematics offers a robust framework for understanding both static and dynamic systems, which are pivotal in various fields of engineering and science. In this blog, we…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Lesson1/index.html" class="no-external">
-<div class="listing-date">
-Jul 21, 2024
-</div>
-<div class="listing-author">
-Siju Swamy
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="news,code,analysis" data-listing-date-sort="1721500200000" data-listing-file-modified-sort="1721667406909" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="427">
-<div class="thumbnail">
-<p><a href="./posts/post-with-code/index.html" class="no-external"></a></p><a href="./posts/post-with-code/index.html" class="no-external">
-<p><img src="./posts/post-with-code/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/post-with-code/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post-with-code/index.html" class="no-external">Demonstrating the Use of PDEs in Chemical Engineering with Python</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post-with-code/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/post-with-code/index.html" class="no-external">Partial Differential Equations (PDEs) are essential in modeling various phenomena in Chemical Engineering. They describe how processes evolve over time and space, such as…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post-with-code/index.html" class="no-external">
-<div class="listing-date">
-Jul 21, 2024
-</div>
-<div class="listing-author">
-Siju SWamy
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="news" data-listing-date-sort="1721241000000" data-listing-file-modified-sort="1721585900749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="730">
-<div class="thumbnail">
-<p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/welcome/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">Mathematics for Chemical Engineers</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/welcome/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/welcome/index.html" class="no-external">Mathematics has always been at the heart of Chemical Engineering, guiding the evolution of the field from its early empirical roots to today’s sophisticated computational…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Jul 18, 2024
-</div>
-<div class="listing-author">
-Siju Swamy
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

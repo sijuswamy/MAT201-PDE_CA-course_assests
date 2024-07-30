@@ -1,0 +1,166 @@
+---
+title: "Solution of Linear Partial Differential Equations "
+author: "Siju Swamy"
+date: "2024-07-25"
+categories: [session note]
+image: chem1.png
+---
+## Concept of Solution of a PDE
+
+The solution of a Partial Differential Equation (PDE) involves finding a function   $u(x, y, z, \ldots)$ that satisfies the given PDE within a specified domain. PDEs involve partial derivatives of an unknown function with respect to multiple variables. Solutions to PDEs can be classified based on their type and the methods used to solve them.
+
+#### Types of Solutions
+
+1. **General Solution**: A solution containing all possible solutions of a PDE and includes arbitrary constants or functions.
+2. **Particular Solution**: A specific solution derived from the general solution by choosing particular values for the arbitrary constants or functions.
+3. **Singular Solution**: A solution not obtainable from the general solution by any choice of constants.
+
+### Classification of Solution Methods
+
+#### Linear PDEs
+
+A PDE is linear if it can be written in the form:
+
+$$a_{ij}(x, y, \ldots) \frac{\partial^2 u}{\partial x_i \partial x_j} + \sum_{i} b_i(x, y, \ldots) \frac{\partial u}{\partial x_i} + c(x, y, \ldots) u = f(x, y, \ldots)$$
+
+where   $a_{ij}$,   $b_i$,   $c$, and   $f$ are given functions, and   $u$ is the unknown function. 
+
+For example $z=px+qy$, $(x^2-y^2)p+(y^2-z^2)q=x(x^2-y^2)$ are linear PDEs.
+
+**Solution Methods for Linear PDEs:**
+
+1. **Method of Characteristics**: Used for first-order PDEs, it involves reducing the PDE to a set of ordinary differential equations (ODEs) along characteristic curves.
+
+2. **Separation of Variables**: Assumes that the solution can be written as a product of functions, each of which depends on a single coordinate. This method is often used for solving linear PDEs with boundary conditions.
+
+3. **Transform Methods**: Includes methods like the Fourier Transform or Laplace Transform, which convert the PDE into an algebraic equation or an ODE that is easier to solve.
+
+4. **Green's Functions**: Used to solve inhomogeneous linear PDEs. The solution is expressed in terms of the Green's function, which incorporates the effects of boundary conditions.
+
+5. **Numerical Methods**: Includes finite difference, finite element, and finite volume methods. These methods approximate the solution using discrete grids and are useful for complex domains and boundary conditions.
+
+#### Non-Linear PDEs
+
+A PDE is non-linear if it involves non-linear terms of the unknown function or its derivatives.
+
+For example, $pq=x^2-y^2$, $rs=px+pq-z$.
+**Solution Methods for Non-Linear PDEs:**
+
+1. **Method of Characteristics**: Also applicable to non-linear first-order PDEs, it involves finding characteristic curves along which the PDE reduces to an ODE.
+
+2. **Perturbation Methods**: Used for PDEs that can be considered as small perturbations of simpler problems. Solutions are found as a series expansion.
+
+3. **Numerical Methods**: Similar to linear PDEs but more complex due to non-linearity. Techniques include finite difference methods, finite element methods, and spectral methods adapted for non-linear cases.
+
+4. **Exact Solutions**: In some cases, non-linear PDEs may be solvable exactly using methods such as the inverse scattering transform, method of similarity solutions, or using specific ansatzes.
+
+5. **Conservation Laws**: For some non-linear PDEs, solutions can be derived using conservation laws and integral constraints that the solution must satisfy.
+
+#### Lagrange PDE
+
+**Concept**:
+
+Lagrange PDEs are first-order PDEs and can be expressed in the general form:
+
+$$F(x, y, z, p, q) = 0$$
+
+where   $p = \frac{\partial z}{\partial x}$ and   $q = \frac{\partial z}{\partial y}$. These equations are often solved using the method of characteristics. The most general form of a Lagrange PDE is $$Pp+Qq=R$$
+
+**Theory Behind Characteristic Equation**:
+
+To solve a Lagrange PDE, the characteristic equation is introduced. This equation simplifies the process of finding the general solution.
+
+**Characteristic Equation**:
+
+For a Lagrange PDE   $F(x, y, z, p, q) = 0$, the characteristic equation is given by:
+
+$$\frac{dx}{P} = \frac{dy}{Q} = \frac{dz}{R}$$
+
+where:
+-   $F_p = \frac{\partial F}{\partial p}$
+-   $F_q = \frac{\partial F}{\partial q}$
+-   $F$ is the original function.
+
+**Reasoning Behind Solving the Characteristic Equation**:
+
+1. **Simplification**: The characteristic equation simplifies the PDE by reducing it to a system of ODEs along characteristic curves. This reduction makes it easier to solve the PDE.
+2. **Reduction to Simpler Form**: The characteristic equation often transforms the PDE into simpler ODEs or integrable forms, facilitating the process of finding a solution.
+3. **Insight into Characteristics**: Solving the characteristic equation provides insight into the nature of the characteristic curves along which the PDE can be integrated. This helps in constructing the general solution.
+
+**Example**:
+Consider the Lagrange PDE:
+
+$$
+x \frac{\partial z}{\partial x} + y \frac{\partial z}{\partial y} = z
+$$
+
+**Steps to Solve Using Characteristic Equation**:
+
+1. **Set Up the Characteristic Equations**:
+
+   For this PDE, the characteristic equations are:
+
+   $$\frac{dx}{x} = \frac{dy}{y} = \frac{dz}{z}$$
+
+2. **Solve Characteristic Equations (grouping method)**:
+
+   Consider the first two fractions in the characteristic equation:
+   $$\frac{dx}{x} = \frac{dy}{y}$$
+
+   On integration we get:
+
+    \begin{align*}
+    \ln |x| &= \ln |y|+\ln c_1\\
+    \ln |x|-\ln|y|&=\ln c_1\\
+    \ln\left|\frac{x}{y}\right|&=\ln c_1\\
+    \implies \left|\frac{x}{y}\right|&=c_1
+    \end{align*}
+
+Now consider the last two fractions in the characteristic equation:
+   $$\frac{dy}{y} = \frac{dz}{z}$$
+
+On integration we get:
+
+\begin{align*}
+    \ln |y| &= \ln |z|+\ln c_2\\
+    \ln |y|-\ln|z|&=\ln c_2\\
+    \ln\left|\frac{y}{z}\right|&=\ln c_2\\
+    \implies \left|\frac{y}{z}\right|&=c_2
+\end{align*}
+
+Considering these two partial solutions, the general solution will be of the form:
+
+$$\phi\left(\frac{x}{y},\frac{y}{z}\right)=0$$
+
+## Algorithm to solve the Lagrange PDE
+
+The first order PDE is of the form $Pp+Qq=R$ can be solved using the following algorithm:
+
+:::  {.callout-important}
+### Algorithm
+
+**Step 1:** Write the Lagrange Auxiliary equation 
+$\frac{dx}{P}=\frac{dy}{Q}=\frac{dz}{R}$
+
+**Step 2:** By grouping or applying method of multipliers, form two pairs of fractions such that mere integration eliminate the differentials and form the solution sets $u=c_1$ and $v=c_2$. 
+
+**Step 3:** Then the general solution is a function of these two functions $u,v$. Thus the required solution is 
+\begin{equation*}
+\phi(u,v)=0
+\end{equation*}
+or
+\begin{equation*}
+u=\phi(v)
+\end{equation*}
+:::
+### Summary {.smaller}
+
+::: {.callout-note}
+### Lagrange Method
+- **Lagrange PDEs**: First-order PDEs that can be solved using the method of characteristics.
+- **Characteristic Equation**: Derived from the PDE and used to simplify the PDE into a set of ODEs. It represents the relationship between variables along the characteristic curves.
+- **Reasoning**: Solving the characteristic equation simplifies the original PDE, providing insights into the characteristics and facilitating the integration along characteristic curves.
+:::
+### 
+
+  
