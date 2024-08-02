@@ -186,8 +186,8 @@ window.Quarto = {
 <section id="concept-of-solution-of-a-pde" class="level2">
 <h2 class="anchored" data-anchor-id="concept-of-solution-of-a-pde">Concept of Solution of a PDE</h2>
 <p>The solution of a Partial Differential Equation (PDE) involves finding a function <span class="math inline">\(u(x, y, z, \ldots)\)</span> that satisfies the given PDE within a specified domain. PDEs involve partial derivatives of an unknown function with respect to multiple variables. Solutions to PDEs can be classified based on their type and the methods used to solve them.</p>
-<section id="types-of-solutions" class="level4">
-<h4 class="anchored" data-anchor-id="types-of-solutions">Types of Solutions</h4>
+<section id="types-of-solutions" class="level3">
+<h3 class="anchored" data-anchor-id="types-of-solutions">Types of Solutions</h3>
 <ol type="1">
 <li><strong>General Solution</strong>: A solution containing all possible solutions of a PDE and includes arbitrary constants or functions.</li>
 <li><strong>Particular Solution</strong>: A specific solution derived from the general solution by choosing particular values for the arbitrary constants or functions.</li>
@@ -295,6 +295,110 @@ u=\phi(v)
 \end{equation*}\]</span></p>
 </div>
 </div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Rules to solve Lagrange PDE
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There are two rules to solve the Lagrange PDE namely <em>method of grouping</em> and <em>method of multipliers</em>.</p>
+<ol type="1">
+<li>**Method of grouping:* Suppose that one of the variables is either absent or cancels out from any pair of fractions of <span class="math inline">\(\dfrac{dx}{P}=\dfrac{dy}{Q}=\dfrac{dz}{R}\)</span>, and then a solution can be obtained by using usual methods. The same procedure is repeated with another pair of fractions of equation <span class="math inline">\(\dfrac{dx}{P}=\dfrac{dy}{Q}=\dfrac{dz}{R}\)</span> for second independent solution.</li>
+<li><strong>Method of multipliers:</strong> In this method we make use of the following properties of ratio and proportion. If <span class="math inline">\(\frac{a_1}{b_1}=\frac{a_2}{b_2}=\frac{c_1}{c_2}=k\)</span>, then for any choice of numbers <span class="math inline">\(l,m,n\)</span>, we have <span class="math display">\[\frac{la_1+ma_2+na_3}{lb_1+mb_2+nb_3}=k\]</span> In our context, we will find the multipliers, <span class="math inline">\(l,m,n\)</span> such that <span class="math display">\[lP+mQ+nR=\]</span></li>
+</ol>
+<p>Then the partial solution corresponding to the choice of these multipliers is given by:</p>
+<p><span class="math display">\[\int ldx+\int mdy+\int ndz=a\]</span></p>
+<p>In the same way find another set of multipliers and formulate second partial solution. Finally the general solution is given by <span class="math display">\[\phi(u,v)=0\]</span></p>
+</div>
+</div>
+<section id="problems" class="level3">
+<h3 class="anchored" data-anchor-id="problems">Problems</h3>
+<ol type="1">
+<li>Solve <span class="math inline">\(p+q=1\)</span>.</li>
+</ol>
+<blockquote class="blockquote">
+<p><em>Solution:</em></p>
+</blockquote>
+<p>The Auxiliary equations are <span class="math inline">\(\dfrac{dx}{1}=\dfrac{dy}{1}=\dfrac{dz}{1}\)</span></p>
+<p>Consider <span class="math inline">\(\dfrac{dx}{1}=\dfrac{dy}{1}\)</span></p>
+<p><span class="math inline">\(\Longrightarrow dx=dy\)</span> Integrating we get <span class="math inline">\(x=y+a\Longrightarrow x-y=a\)</span>…….(1)</p>
+<p>Consider <span class="math inline">\(\dfrac{dx}{1}=\dfrac{dz}{1}\)</span></p>
+<p><span class="math inline">\(\Longrightarrow dx=dz\)</span></p>
+<p>Integrating we get <span class="math inline">\(x=z+b\Longrightarrow x-z=b\)</span>…….(2)</p>
+<p>From (1) and (2) the general solution is <span class="math inline">\(\phi(x-y,x-z)=0\)</span></p>
+<ol start="2" type="1">
+<li>Solve <span class="math inline">\(p\tan x+q\tan y=\tan z\)</span>.</li>
+</ol>
+<blockquote class="blockquote">
+<p><em>Solution:</em></p>
+</blockquote>
+<p>Clearly given PDE is in Lagrange form. So the subsidiary equation is given by:</p>
+<p><span class="math display">\[\begin{align*}
+\dfrac{dx}{P}=\dfrac{dy}{Q}&amp;=\dfrac{dz}{R}\\
+\implies \dfrac{dx}{\tan x}=\dfrac{dy}{\tan y}&amp;=\dfrac{dz}{\tan z}\\
+\text{ Considering first two fractions, we get}\\
+\dfrac{dx}{\tan x}&amp;=\dfrac{dy}{\tan y}\\
+\cot xdx&amp;=\cot y dy\\
+\text{ Integrating , we get}\\
+\ln(\sin x)&amp;=\ln(\sin y)+\ln(c_1)\\
+\ln(\sin x)-\ln(\sin y)&amp;=\ln(c_1)\\
+\ln\biggl(\dfrac{\sin x}{\sin y}\biggr)&amp;=\ln(c_1)\\
+\implies\dfrac{\sin x}{\sin y}&amp;=c_1
+\end{align*}\]</span></p>
+<p>Similarly, considering second and third fractions, <span class="math display">\[\begin{align*}
+\dfrac{dy}{\tan y}&amp;=\dfrac{dz}{\tan z}\\
+\cot ydy&amp;=\cot z dz\\
+\text{ Integrating , we get}\\
+\ln(\sin y)&amp;=\ln(\sin z)+\ln(c_2)\\
+\implies\ln(\sin y)-\ln(\sin z)&amp;=\ln(c_2)\\
+\ln\biggl(\dfrac{\sin y}{\sin z}\biggr)&amp;=\ln(c_2)\\
+\implies\dfrac{\sin y}{\sin z}&amp;=c_2
+\end{align*}\]</span></p>
+<p>Hence the required solution is: <span class="math display">\[\begin{align*}
+\phi(u,v)&amp;=0\\
+\phi\biggl(\dfrac{\sin x}{\sin y},\dfrac{\sin y}{\sin z}\biggr)&amp;=0
+\end{align*}\]</span></p>
+<ol start="3" type="1">
+<li>Solve the Lagrange Linear PDE, <span class="math inline">\(\displaystyle \frac{y^2z}{x}p+xzq=y^2\)</span></li>
+</ol>
+<blockquote class="blockquote">
+<p><em>Solution:</em></p>
+</blockquote>
+<p>Given PDE can be written as <span class="math inline">\(y^2zp+x^2zq=y^2x\)</span>, clearly this is a linear PDE. So the subsidiary equation is given by; <span class="math display">\[\begin{eqnarray*}
+    \frac{dx}{P}&amp;=&amp;\frac{dy}{Q}=\frac{dz}{R}\\
+    \therefore \frac{dx}{y^2z}&amp;=&amp;\frac{dy}{x^2z}=\frac{dz}{y^2x}
+\end{eqnarray*}\]</span> Considering first two fractions; <span class="math display">\[\frac{dx}{y^2z}=\frac{dy}{x^2z}\]</span> or <span class="math display">\[x^2dx=y^2dy\]</span></p>
+<p>n integrating both sides, we get <span class="math display">\[x^3-y^3=c_1\]</span> In the same way considering first and third fractions, <span class="math display">\[\begin{align*}
+\dfrac{dx}{y^2z}&amp;=\dfrac{dz}{y^2x}\\
+\implies \dfrac{dx}{z}&amp;=\dfrac{dz}{x}\\
+xdx&amp;=zdz\\
+\dfrac{x^2}{2}&amp;=\dfrac{z^2}{2}+c
+\end{align*}\]</span> <span class="math display">\[\therefore \, x^2-z^2=c_2\]</span> Thus the required solution is <span class="math inline">\(\phi(x^2-z^2,x^3-y^3)=0\)</span>.</p>
+<ol start="4" type="1">
+<li>Solve <span class="math inline">\(pz-qz=z^2+(x+y)^2\)</span>.</li>
+</ol>
+<blockquote class="blockquote">
+<p><em>Solution:</em></p>
+</blockquote>
+<p>Clearly this is a LPDE. The S.E is given by <span class="math display">\[\frac{dx}{z}=\frac{dy}{-z}=\frac{dz}{z^2+(x+y)^2}\]</span> Taking first two fractions, we have <span class="math display">\[\begin{eqnarray}
+\frac{dx}{z}&amp;=&amp;\frac{dy}{-z}\nonumber\\
+dx&amp;=&amp;-dy\nonumber\\
+\therefore x+y&amp;=&amp;a[ \textit{By integration}]
+\end{eqnarray}\]</span></p>
+<p>Again taking first and third fractions, we have</p>
+<p><span class="math display">\[\begin{eqnarray*}
+\frac{dx}{z}&amp;=&amp;\frac{dz}{z^2+(x+y)^2}\\
+dx&amp;=&amp;z\frac{dz}{z^2+a^2}\\
+2dx&amp;=&amp;\frac{2zdz}{z^2+a^2}\\
+2x+b&amp;=&amp;\log(z^2+a^2)\\
+\log(z^2+a^2)-2x&amp;=&amp;b
+\label{prb:eq2}
+\end{eqnarray*}\]</span> Therefore, the general solution is <span class="math display">\[\phi(x+y,\log(z^2+a^2)-2x)=0\]</span></p>
+</section>
 <section id="summary" class="level3 smaller">
 <h3 class="smaller anchored" data-anchor-id="summary">Summary</h3>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -314,9 +418,6 @@ Lagrange Method
 </ul>
 </div>
 </div>
-</section>
-<section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section"></h3>
 
 
 </section>
