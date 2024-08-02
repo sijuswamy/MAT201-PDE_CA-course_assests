@@ -9,7 +9,7 @@ image: chem1.png
 
 The solution of a Partial Differential Equation (PDE) involves finding a function   $u(x, y, z, \ldots)$ that satisfies the given PDE within a specified domain. PDEs involve partial derivatives of an unknown function with respect to multiple variables. Solutions to PDEs can be classified based on their type and the methods used to solve them.
 
-#### Types of Solutions
+### Types of Solutions
 
 1. **General Solution**: A solution containing all possible solutions of a PDE and includes arbitrary constants or functions.
 2. **Particular Solution**: A specific solution derived from the general solution by choosing particular values for the arbitrary constants or functions.
@@ -153,6 +153,135 @@ or
 u=\phi(v)
 \end{equation*}
 :::
+
+:::{.callout-note}
+### Rules to solve Lagrange PDE
+There are two rules to solve the Lagrange PDE namely *method of grouping* and *method of multipliers*.
+
+1. **Method of grouping:* Suppose that one of the variables is either absent or cancels out from any pair of fractions of $\dfrac{dx}{P}=\dfrac{dy}{Q}=\dfrac{dz}{R}$, and then a solution can be obtained by using usual methods. The same procedure is repeated with another pair of fractions of equation $\dfrac{dx}{P}=\dfrac{dy}{Q}=\dfrac{dz}{R}$ for second independent solution.
+2. **Method of multipliers:** In this method we make use of the following properties of ratio and proportion.
+If $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\frac{c_1}{c_2}=k$, then for any choice of numbers $l,m,n$, we have 
+$$\frac{la_1+ma_2+na_3}{lb_1+mb_2+nb_3}=k$$
+In our context, we will find the multipliers, $l,m,n$ such that $$lP+mQ+nR=$$
+
+Then the partial solution corresponding to the choice of these multipliers is given by:
+
+$$\int ldx+\int mdy+\int ndz=a$$
+
+In the same way find another set of multipliers and formulate second partial solution. Finally the general solution is given by $$\phi(u,v)=0$$
+:::
+### Problems
+
+1. Solve $p+q=1$.
+
+>*Solution:*
+
+The Auxiliary equations are $\dfrac{dx}{1}=\dfrac{dy}{1}=\dfrac{dz}{1}$
+
+Consider $\dfrac{dx}{1}=\dfrac{dy}{1}$
+
+$\Longrightarrow dx=dy$
+Integrating we get $x=y+a\Longrightarrow x-y=a$.......(1)
+
+Consider $\dfrac{dx}{1}=\dfrac{dz}{1}$
+
+$\Longrightarrow dx=dz$
+
+Integrating we get $x=z+b\Longrightarrow x-z=b$.......(2)
+
+From (1) and (2) the general solution is $\phi(x-y,x-z)=0$
+
+2. Solve $p\tan x+q\tan y=\tan z$.
+
+>*Solution:*
+
+
+Clearly given PDE is in Lagrange form. So the subsidiary equation is given by:
+
+\begin{align*}
+\dfrac{dx}{P}=\dfrac{dy}{Q}&=\dfrac{dz}{R}\\
+\implies \dfrac{dx}{\tan x}=\dfrac{dy}{\tan y}&=\dfrac{dz}{\tan z}\\
+\text{ Considering first two fractions, we get}\\
+\dfrac{dx}{\tan x}&=\dfrac{dy}{\tan y}\\
+\cot xdx&=\cot y dy\\
+\text{ Integrating , we get}\\
+\ln(\sin x)&=\ln(\sin y)+\ln(c_1)\\
+\ln(\sin x)-\ln(\sin y)&=\ln(c_1)\\
+\ln\biggl(\dfrac{\sin x}{\sin y}\biggr)&=\ln(c_1)\\
+\implies\dfrac{\sin x}{\sin y}&=c_1
+\end{align*}
+
+Similarly, considering second and third fractions,
+\begin{align*}
+\dfrac{dy}{\tan y}&=\dfrac{dz}{\tan z}\\
+\cot ydy&=\cot z dz\\
+\text{ Integrating , we get}\\
+\ln(\sin y)&=\ln(\sin z)+\ln(c_2)\\
+\implies\ln(\sin y)-\ln(\sin z)&=\ln(c_2)\\
+\ln\biggl(\dfrac{\sin y}{\sin z}\biggr)&=\ln(c_2)\\
+\implies\dfrac{\sin y}{\sin z}&=c_2
+\end{align*}
+
+Hence the required solution is:
+\begin{align*}
+\phi(u,v)&=0\\
+\phi\biggl(\dfrac{\sin x}{\sin y},\dfrac{\sin y}{\sin z}\biggr)&=0
+\end{align*}
+
+3. Solve the Lagrange Linear PDE, $\displaystyle \frac{y^2z}{x}p+xzq=y^2$
+
+>*Solution:*
+
+Given PDE can be written as $y^2zp+x^2zq=y^2x$, 
+clearly this is a linear PDE. So the subsidiary equation is given by;
+\begin{eqnarray*}
+	\frac{dx}{P}&=&\frac{dy}{Q}=\frac{dz}{R}\\
+	\therefore \frac{dx}{y^2z}&=&\frac{dy}{x^2z}=\frac{dz}{y^2x}
+\end{eqnarray*}
+Considering first two fractions;
+$$\frac{dx}{y^2z}=\frac{dy}{x^2z}$$
+or
+$$x^2dx=y^2dy$$
+
+n integrating both sides, we get
+$$x^3-y^3=c_1$$ 
+In the same way considering first and third fractions,
+\begin{align*}
+\dfrac{dx}{y^2z}&=\dfrac{dz}{y^2x}\\
+\implies \dfrac{dx}{z}&=\dfrac{dz}{x}\\
+xdx&=zdz\\
+\dfrac{x^2}{2}&=\dfrac{z^2}{2}+c
+\end{align*} 
+$$\therefore \, x^2-z^2=c_2$$ 
+Thus the required solution is $\phi(x^2-z^2,x^3-y^3)=0$.
+
+4. Solve $pz-qz=z^2+(x+y)^2$.
+
+>*Solution:*
+
+Clearly this is a LPDE. The S.E is given by
+$$\frac{dx}{z}=\frac{dy}{-z}=\frac{dz}{z^2+(x+y)^2}$$
+Taking first two fractions, we have
+\begin{eqnarray}
+\frac{dx}{z}&=&\frac{dy}{-z}\nonumber\\
+dx&=&-dy\nonumber\\
+\therefore x+y&=&a[ \textit{By integration}]
+\end{eqnarray}
+
+Again taking first and third fractions, we have
+
+\begin{eqnarray*}
+\frac{dx}{z}&=&\frac{dz}{z^2+(x+y)^2}\\
+dx&=&z\frac{dz}{z^2+a^2}\\
+2dx&=&\frac{2zdz}{z^2+a^2}\\
+2x+b&=&\log(z^2+a^2)\\
+\log(z^2+a^2)-2x&=&b
+\label{prb:eq2}
+\end{eqnarray*}
+Therefore, the general solution is 
+$$\phi(x+y,\log(z^2+a^2)-2x)=0$$
+
+
 ### Summary {.smaller}
 
 ::: {.callout-note}
@@ -161,6 +290,5 @@ u=\phi(v)
 - **Characteristic Equation**: Derived from the PDE and used to simplify the PDE into a set of ODEs. It represents the relationship between variables along the characteristic curves.
 - **Reasoning**: Solving the characteristic equation simplifies the original PDE, providing insights into the characteristics and facilitating the integration along characteristic curves.
 :::
-### 
 
   
